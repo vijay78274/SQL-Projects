@@ -1,0 +1,24 @@
+Q1 Join the necessary tables to find the total quantity of each pizza category ordered.
+sol: SELECT 
+     t.category, SUM(o.quantity) AS totoal_quantity 
+     FROM
+     pizza_types t
+        JOIN
+     pizzas p ON t.pizza_type_id = p.pizza_type_id
+        JOIN
+     order_details o ON p.pizza_id = o.pizza_id
+     GROUP BY t.category;
+
+Q2 Determine the distribution of orders by hour of the day.
+sol: SELECT 
+      HOUR(order_time) AS 'hour', COUNT(order_id)
+    FROM
+      orders
+    GROUP BY hour;
+
+Q3 Join relevant tables to find the category-wise distribution of pizzas.
+sol:  SELECT 
+        pt.category, COUNT(pt.name) AS count
+      FROM
+        pizza_types pt
+      GROUP BY pt.category;
