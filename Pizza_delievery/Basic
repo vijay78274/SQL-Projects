@@ -1,7 +1,44 @@
 1. Retrieve the total number of orders placed.
 sol: select count(*) as 'No of orders' from orders; 
 
+
 2.Calculate the total revenue generated from pizza sales.
-select sum(order_details.quantity * pizzas.price) as total_revenue from order_details join pizzas on order_details.pizza_id = pizzas.pizza_id;
+sol: select sum(order_details.quantity * pizzas.price) as total_revenue 
+from 
+order_details join pizzas 
+on 
+order_details.pizza_id = pizzas.pizza_id;
+
 
 3.Identify the highest-priced pizza.
+sol: select t.name, p.price 
+from pizza_types t join pizzas p on
+p.pizza_type_id=t.pizza_type_id order by p.price desc limit 1;
+
+
+4.Identify the most common pizza size ordered.
+Sol: select p.size, count(*) as count 
+from 
+pizzas p join order_details o 
+on
+p.pizza_id = o.pizza_id group by p.size order by count(*) desc limit 1;
+
+
+5.List the top 5 most ordered pizza types along with their quantities.
+SELECT 
+    t.name, SUM(o.quantity) AS quantity
+FROM
+    pizza_types t
+        JOIN
+    pizzas p ON t.pizza_type_id = p.pizza_type_id
+        JOIN
+    order_details o ON p.pizza_id = o.pizza_id
+GROUP BY t.name
+ORDER BY quantity DESC
+LIMIT 5;
+
+
+
+
+
+
