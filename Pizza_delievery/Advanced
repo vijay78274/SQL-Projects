@@ -5,3 +5,11 @@ Q1 Calculate the percentage contribution of each pizza type to total revenue.
   select *From order_details;
   select sum(p.price*quantity) as percentage, t.category from pizza_types t join pizzas p on p.pizza_type_id = t.pizza_type_id join order_details o
   on p.pizza_id = o.pizza_id group by t.category order by percentage desc;
+
+Q2 Determine the top 3 most ordered pizza types based on revenue for each pizza category.
+  select *from pizza_types;
+  select *From pizzas;
+  select *From orders;
+  select *From order_details;  
+  select t.category, sum(p.price*o.quantity) as  revenue from order_details o join pizzas p on o.pizza_id = p.pizza_id join pizza_types t   
+  on p.pizza_type_id = t.pizza_type_id group by t.category;
