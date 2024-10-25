@@ -1,1 +1,22 @@
+Q.1 Find total sales for each category
+use amazon;
+select category, sum(quantity) as total_sales from amazon_db group by category; 
 
+Q.2 Find out average qty ordered per category
+select category, avg(quantity) as avg_qnty from amazon_db group by category;  
+
+Q.3 Calculate the profit margin percentage for each sale (Profit divided by Sales)
+select sales,round(profit/sales*100,2) as percentage from amazon_db;
+
+Q.4 Find out states with highest total orders
+select state, sum(quantity) as total_orders from amazon_db group by state order by sum(quantity)  desc limit 1;
+
+Q.5 Find out top 5 customers who made the highest profits
+select customer, sum(profit) from amazon_db group by customer order by sum(profit) desc limit 5; 
+
+Q.8 Determine the month with the highest number of orders.
+select month(order_date) as month, count(quantity) from amazon_db group by month(order_date) order by count(quantity) desc limit 1;
+
+Q.10 Calculate the percentage contribution of each sub-category to the total sales amount for the year 2023.
+select sub_category, (sum(sales)/(select sum(sales) from amazon_db where year(order_date)=2023)) *100 
+as percentage from amazon_db where year(order_date) = 2023 group by sub_category;
