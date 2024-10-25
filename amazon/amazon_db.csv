@@ -1,0 +1,1000 @@
+Order_id,Order Date,Customer Name,State,Category,Sub-Category,Sales,Quantity,Profit
+1,2021-09-02,Aman,Uttarakhand,Office Supplies,Paper,16.45,2,5.55
+2,2022-08-25,Sudhir,Chhattisgarh,Office Supplies,Labels,11.78,3,4.27
+3,2020-09-29,Aditi,Haryana,Office Supplies,Storage,272.74,3,-64.77
+4,2020-11-01,Aman,Tamil Nadu,Office Supplies,Binders,3.54,2,-5.49
+5,2023-10-13,Nitin,Meghalaya,Office Supplies,Art,19.54,3,4.88
+6,2020-11-17,Ayush,Manipur,Office Supplies,Paper,19.44,3,9.33
+7,2022-09-05,Kabir,Arunachal Pradesh,Office Supplies,Art,12.78,3,5.24
+8,2022-11-20,Saloni,Manipur,Furniture,Chairs,2573.82,9,746.41
+9,2022-03-13,Manisha,Telangana,Office Supplies,Binders,609.98,2,274.49
+10,2021-09-01,Tarun,Uttar Pradesh,Office Supplies,Art,5.48,2,1.48
+11,2022-01-03,Avinash,Madhya Pradesh,Technology,Phones,391.98,2,113.67
+12,2023-04-19,Rohan,Rajasthan,Technology,Phones,755.96,4,204.11
+13,2023-10-05,Aarav,Madhya Pradesh,Office Supplies,Fasteners,31.12,4,0.31
+14,2022-07-03,Advait,Himachal Pradesh,Office Supplies,Paper,6.54,1,3.01
+15,2021-07-16,Bhavana,Punjab,Furniture,Furnishings,76.73,3,-53.71
+16,2022-11-09,Vikas,Uttar Pradesh,Office Supplies,Binders,10.43,7,-18.25
+17,2020-02-12,Vaibhav,Kerala,Office Supplies,Art,9.34,2,1.17
+18,2021-05-03,Sandeep,Rajasthan,Technology,Accessories,31.2,3,9.75
+19,2023-11-30,Kajal,Nagaland,Office Supplies,Labels,2.89,1,1.36
+20,2021-06-20,Anjali,Kerala,Furniture,Furnishings,51.94,1,21.3
+21,2020-09-19,Shalini,Bihar,Furniture,Furnishings,9.94,2,3.08
+22,2022-11-22,Isha,Jharkhand,Office Supplies,Envelopes,11.36,2,5.34
+23,2022-05-14,Ankit,Telangana,Office Supplies,Envelopes,50.94,3,25.47
+24,2021-12-03,Meera,Meghalaya,Technology,Accessories,646.74,6,258.7
+25,2020-12-21,Gunjan,Maharashtra,Office Supplies,Binders,5.64,3,2.71
+26,2022-04-23,Shraddha,Tripura,Office Supplies,Storage,572.58,6,34.35
+27,2022-04-23,Akanksha,Mizoram,Furniture,Chairs,545.94,6,87.35
+28,2023-06-20,Sarika,Chhattisgarh,Office Supplies,Storage,1325.85,5,238.65
+29,2021-04-29,Vikas,Sikkim,Furniture,Bookcases,334,3,3.93
+30,2021-07-01,Vineet,Mizoram,Office Supplies,Art,19.9,5,6.57
+31,2023-11-22,Priya,Himachal Pradesh,Office Supplies,Paper,37.41,7,13.09
+32,2022-10-10,Akanksha,Chhattisgarh,Office Supplies,Binders,3.44,2,-2.52
+33,2020-02-07,Kajal,Gujarat,Furniture,Bookcases,61.96,4,-53.29
+34,2022-10-01,Nikhil,Andhra Pradesh,Technology,Accessories,149.95,5,65.98
+35,2021-09-06,Anushka,Uttarakhand,Furniture,Furnishings,127.1,6,28.6
+36,2020-09-16,Kunal,Mizoram,Technology,Phones,124.2,3,-31.05
+37,2021-09-24,Karthik,Rajasthan,Office Supplies,Binders,18.59,2,-13.63
+38,2022-09-22,Raman,Jharkhand,Office Supplies,Labels,30.07,3,10.15
+39,2022-12-02,Raman,Arunachal Pradesh,Office Supplies,Appliances,64.86,4,6.49
+40,2021-05-13,Karthik,West Bengal,Office Supplies,Binders,32.34,10,-23.72
+41,2020-11-13,Neha,Tripura,Office Supplies,Paper,56.06,4,19.62
+42,2021-04-20,Priya,Jharkhand,Office Supplies,Envelopes,108.72,5,36.69
+43,2022-06-04,Jhanvi,Punjab,Furniture,Bookcases,181.47,5,-320.6
+44,2023-10-14,Sonam,Chhattisgarh,Technology,Phones,699.93,7,181.98
+45,2023-01-19,Divya,Gujarat,Office Supplies,Art,22.96,7,6.66
+46,2023-11-23,Kriti,Chhattisgarh,Furniture,Furnishings,38.6,4,11.58
+47,2022-01-03,Sakshi,Chhattisgarh,Office Supplies,Art,6.63,3,1.79
+48,2022-08-18,Vikram,Rajasthan,Office Supplies,Envelopes,23.34,3,10.97
+49,2022-04-13,Shweta,Haryana,Furniture,Chairs,1067.94,3,224.27
+50,2023-10-14,Kunal,Manipur,Office Supplies,Paper,19.36,2,9.29
+51,2020-01-07,Raj,Bihar,Furniture,Furnishings,19.3,2,5.79
+52,2020-07-12,Gayatri,Arunachal Pradesh,Office Supplies,Storage,13.98,1,4.05
+53,2022-05-07,Jatin,West Bengal,Furniture,Furnishings,272.94,3,30.02
+54,2021-05-13,Akanksha,Nagaland,Office Supplies,Binders,19.05,5,8.95
+55,2024-01-06,Isha,Kerala,Office Supplies,Appliances,247.72,4,93.58
+56,2023-02-04,Rakesh,Nagaland,Office Supplies,Storage,66.58,2,15.98
+57,2023-10-27,Nikhil,Assam,Office Supplies,Art,43.92,3,12.74
+58,2022-11-17,Rohit,Tamil Nadu,Furniture,Furnishings,14.73,3,4.86
+59,2020-08-07,Nidhi,Odisha,Office Supplies,Binders,29.7,5,13.37
+60,2023-11-19,Udit,Uttar Pradesh,Office Supplies,Binders,67.19,1,-51.52
+61,2021-08-14,Anand,Tamil Nadu,Furniture,Furnishings,25.25,3,4.1
+62,2022-11-25,Kunal,Bihar,Office Supplies,Paper,40.08,6,19.24
+63,2022-07-16,Sourabh,West Bengal,Office Supplies,Fasteners,5.94,3,0
+64,2021-12-05,Janhvi,Bihar,Furniture,Furnishings,62.82,3,30.78
+65,2024-01-19,Yogesh,Gujarat,Office Supplies,Storage,489.92,8,0
+66,2023-03-04,Disha,Bihar,Office Supplies,Paper,19.44,3,9.33
+67,2024-01-25,Simran,West Bengal,Office Supplies,Paper,16.68,2,8.34
+68,2021-03-01,Isha,Tripura,Technology,Phones,155.35,13,0
+69,2023-03-07,Shakshi,Jharkhand,Furniture,Furnishings,12.42,3,4.47
+70,2021-09-16,Kavya,Andhra Pradesh,Technology,Phones,187.98,2,52.63
+71,2021-12-29,Pooja,Nagaland,Office Supplies,Binders,10.68,2,5.02
+72,2023-12-02,Saloni,Uttar Pradesh,Furniture,Bookcases,141.96,2,39.75
+73,2021-02-10,Ananya,Arunachal Pradesh,Office Supplies,Storage,57.23,1,14.31
+74,2020-11-18,Sonam,Odisha,Furniture,Tables,333,3,-16.65
+75,2023-04-23,Yogesh,Arunachal Pradesh,Office Supplies,Art,36.44,4,12.03
+76,2020-11-20,Kajal,Arunachal Pradesh,Office Supplies,Binders,3.93,1,1.33
+77,2020-04-02,Bhavana,Punjab,Office Supplies,Paper,10.56,2,4.75
+78,2021-04-10,Divya,Manipur,Office Supplies,Storage,229.94,2,6.9
+79,2023-02-26,Aarav,Himachal Pradesh,Furniture,Bookcases,290.67,2,3.42
+80,2020-10-09,Rakesh,West Bengal,Technology,Accessories,468.9,6,206.32
+81,2020-06-05,Sanjay,Assam,Office Supplies,Fasteners,12.35,5,5.8
+82,2022-06-04,Sandeep,Rajasthan,Office Supplies,Binders,18.34,2,-12.22
+83,2020-03-01,Varun,Maharashtra,Technology,Phones,180.96,5,13.57
+84,2023-11-22,Ishan,Himachal Pradesh,Office Supplies,Binders,83.84,2,27.25
+85,2024-01-28,Anand,Manipur,Office Supplies,Binders,13.27,3,4.31
+86,2023-12-16,Shiv,Jharkhand,Office Supplies,Binders,82.9,3,29.01
+87,2023-10-23,Shiv,Andhra Pradesh,Office Supplies,Paper,34.24,4,16.09
+88,2023-05-16,Lakshay,Maharashtra,Office Supplies,Binders,17.25,2,6.04
+89,2020-09-07,Aditi,Odisha,Office Supplies,Labels,15,4,7.2
+90,2023-05-14,Rajesh,Tamil Nadu,Technology,Phones,161.61,1,42.02
+91,2020-09-18,Sudhir,Jharkhand,Technology,Phones,144.95,5,42.04
+92,2021-03-12,Nikhil,Mizoram,Office Supplies,Binders,8.95,2,-14.77
+93,2023-05-10,Vipul,Maharashtra,Technology,Accessories,115.36,7,49.6
+94,2023-08-15,Tanvi,Gujarat,Office Supplies,Storage,64.96,4,9.74
+95,2023-05-24,Gayatri,Assam,Furniture,Furnishings,14.56,2,5.53
+96,2023-12-28,Sonia,Maharashtra,Technology,Accessories,234.45,3,103.16
+97,2023-04-05,Vikram,Maharashtra,Furniture,Tables,1256.22,6,75.37
+98,2023-12-04,Ravi,Andhra Pradesh,Office Supplies,Binders,17.46,2,8.21
+99,2021-01-01,Akash,West Bengal,Furniture,Chairs,60.89,1,15.22
+100,2023-09-22,Alia,Jharkhand,Office Supplies,Labels,14.94,3,6.87
+101,2020-03-25,Ravi,Madhya Pradesh,Office Supplies,Binders,9.64,2,4.43
+102,2022-05-27,Abhilasha,Haryana,Furniture,Furnishings,332.94,3,53.27
+103,2021-03-19,Akash,West Bengal,Office Supplies,Binders,51.9,3,24.39
+104,2023-12-06,Gaurav,Uttar Pradesh,Office Supplies,Storage,64.96,2,2.6
+105,2020-07-24,Prachi,Mizoram,Furniture,Chairs,129.57,2,-24.29
+106,2020-07-24,Rajesh,Odisha,Office Supplies,Paper,16.18,3,6.07
+107,2021-05-07,Shraddha,Assam,Technology,Accessories,239.97,3,86.39
+108,2023-01-29,Jatin,Bihar,Office Supplies,Appliances,81.96,2,22.95
+109,2024-01-03,Gunjan,Nagaland,Office Supplies,Supplies,238.62,2,4.77
+110,2024-01-04,Swati,Arunachal Pradesh,Office Supplies,Binders,21.36,5,7.21
+111,2023-02-12,Amrita,Sikkim,Office Supplies,Binders,1.08,3,-1.73
+112,2020-06-05,Akshay,Tripura,Office Supplies,Appliances,7.96,2,-13.93
+113,2021-12-24,Ananya,Bihar,Office Supplies,Art,54.21,14,8.81
+114,2023-11-20,Shashank,Maharashtra,Furniture,Furnishings,25.16,5,-11.32
+115,2023-01-12,Shiv,Nagaland,Office Supplies,Storage,12.62,2,-2.52
+116,2022-05-25,Tarun,Andhra Pradesh,Technology,Accessories,62.31,3,22.43
+117,2020-06-06,Divya,Uttarakhand,Furniture,Furnishings,20.32,4,6.91
+118,2020-07-26,Ishita,Manipur,Office Supplies,Paper,12.96,2,6.22
+119,2020-08-11,Kunal,Assam,Office Supplies,Binders,8.85,5,-13.72
+120,2023-02-25,Anjali,Uttarakhand,Office Supplies,Paper,19.44,3,9.33
+121,2021-06-21,Jatin,Jharkhand,Office Supplies,Labels,6.94,3,2.34
+122,2021-11-03,Aishwarya,Chhattisgarh,Office Supplies,Binders,4.43,3,-6.86
+123,2022-11-25,Yogesh,Andhra Pradesh,Office Supplies,Paper,32.9,4,11.1
+124,2020-12-16,Kajal,Assam,Office Supplies,Paper,22.78,3,7.69
+125,2023-02-22,Vaibhav,Mizoram,Office Supplies,Art,19.46,4,3.4
+126,2020-11-29,Ankit,Tripura,Furniture,Chairs,457.57,2,51.48
+127,2021-09-28,Vikram,Assam,Technology,Phones,5.94,3,1.6
+128,2022-11-01,Disha,Himachal Pradesh,Furniture,Chairs,634.12,6,-172.12
+129,2020-07-13,Kunal,Madhya Pradesh,Office Supplies,Paper,17.47,3,5.68
+130,2020-06-02,Pranav,Uttar Pradesh,Office Supplies,Fasteners,18.84,5,-3.53
+131,2020-03-11,Kunal,West Bengal,Furniture,Chairs,362.25,6,0
+132,2021-08-19,Nikhil,Tamil Nadu,Furniture,Furnishings,63.55,6,-34.95
+133,2020-12-04,Deepak,Mizoram,Office Supplies,Storage,129.55,3,-22.67
+134,2020-07-03,Isha,Maharashtra,Office Supplies,Storage,137.35,3,8.58
+135,2020-04-16,Janhvi,Jharkhand,Furniture,Tables,376.51,3,-43.03
+136,2023-09-07,Varun,Himachal Pradesh,Office Supplies,Envelopes,11.36,2,5.34
+137,2020-04-05,Ananya,Maharashtra,Office Supplies,Paper,36.4,5,17.47
+138,2021-12-08,Sudhir,Arunachal Pradesh,Office Supplies,Paper,3.42,1,1.07
+139,2020-11-24,Rohit,Himachal Pradesh,Technology,Accessories,151.2,3,32.13
+140,2021-03-24,Nikhil,Sikkim,Office Supplies,Art,19.46,4,3.4
+141,2023-12-09,Swati,Andhra Pradesh,Technology,Phones,9.99,1,4.6
+142,2022-09-28,Ishita,Bihar,Office Supplies,Binders,125.76,3,40.87
+143,2020-10-27,Saloni,Chhattisgarh,Office Supplies,Binders,25.32,5,9.18
+144,2023-08-28,Shweta,Assam,Office Supplies,Labels,15.12,3,4.91
+145,2020-01-26,Kabir,Mizoram,Furniture,Bookcases,302.45,5,-199.62
+146,2023-12-24,Aditi,Goa,Office Supplies,Storage,44.67,8,-10.05
+147,2022-02-23,Priya,Arunachal Pradesh,Office Supplies,Appliances,176.77,3,-459.61
+148,2023-11-17,Hemant,Manipur,Furniture,Tables,626.35,3,-23.49
+149,2020-02-17,Rakesh,Sikkim,Office Supplies,Storage,354.9,5,17.75
+150,2020-05-15,Uma,Himachal Pradesh,Office Supplies,Art,15.55,3,2.33
+151,2022-01-03,Hari,Haryana,Office Supplies,Art,59.52,3,15.48
+152,2022-06-08,Sudhir,Jharkhand,Technology,Accessories,479.97,3,177.59
+153,2023-04-07,Divya,Kerala,Office Supplies,Supplies,18.62,2,5.4
+154,2022-02-02,Utkarsh,Kerala,Office Supplies,Binders,49.63,6,16.75
+155,2021-01-01,Sagar,Madhya Pradesh,Office Supplies,Paper,97.82,2,45.98
+156,2021-02-28,Amrita,Manipur,Furniture,Chairs,48.71,1,5.48
+157,2022-05-15,Sanjay,Assam,Office Supplies,Art,17.94,3,4.66
+158,2020-11-19,Abhay,Meghalaya,Office Supplies,Storage,242.94,3,4.86
+159,2020-08-05,Sakshi,Tamil Nadu,Office Supplies,Binders,107.65,2,33.64
+160,2024-01-11,Shakshi,West Bengal,Office Supplies,Art,20.65,5,9.5
+161,2021-08-22,Abhilasha,Assam,Office Supplies,Storage,204.9,5,0
+162,2020-10-25,Saurabh,Punjab,Furniture,Chairs,436.7,6,21.84
+163,2022-09-12,Jaya,Uttar Pradesh,Furniture,Chairs,481.57,2,54.18
+164,2022-12-01,Ishita,Mizoram,Office Supplies,Paper,22.38,2,10.74
+165,2021-05-03,Utkarsh,Bihar,Office Supplies,Storage,636.41,3,-15.91
+166,2020-10-16,Raj,Telangana,Office Supplies,Art,83.17,4,9.36
+167,2021-10-20,Aarav,Gujarat,Furniture,Furnishings,8.32,5,2.29
+168,2022-11-02,Aditi,Odisha,Office Supplies,Fasteners,10.46,6,1.7
+169,2022-01-25,Abhilasha,Andhra Pradesh,Office Supplies,Paper,108.92,14,49.01
+170,2020-11-21,Kabir,Manipur,Office Supplies,Appliances,146.76,3,38.16
+171,2023-01-03,Ishan,West Bengal,Technology,Accessories,32.96,2,14.17
+172,2023-04-01,Deepika,Rajasthan,Technology,Phones,587.97,3,164.63
+173,2023-10-29,Shiv,Haryana,Office Supplies,Paper,14.94,3,7.02
+174,2022-07-25,Karan,Haryana,Office Supplies,Art,7.98,3,2.07
+175,2022-11-02,Sandeep,Uttarakhand,Office Supplies,Paper,10.56,2,4.75
+176,2023-03-19,Monica,Madhya Pradesh,Office Supplies,Art,3.38,1,1.25
+177,2022-09-14,Sandeep,Rajasthan,Furniture,Chairs,1139.92,4,284.98
+178,2021-07-20,Anjali,Uttar Pradesh,Office Supplies,Binders,33.09,4,11.17
+179,2021-02-02,Ayesha,Jharkhand,Office Supplies,Storage,80.98,1,3.24
+180,2020-01-23,Ishita,Jharkhand,Technology,Accessories,82.8,12,6.62
+181,2021-05-04,Aishwarya,Chhattisgarh,Office Supplies,Storage,21.36,2,5.77
+182,2022-09-08,Isha,Himachal Pradesh,Office Supplies,Binders,62.05,2,20.17
+183,2022-01-13,Ananya,Meghalaya,Technology,Machines,574.91,2,156.05
+184,2020-11-20,Vipul,Goa,Office Supplies,Paper,8.45,2,2.64
+185,2021-06-24,Anand,Tripura,Office Supplies,Paper,91.06,6,31.87
+186,2023-11-22,Sakshi,Madhya Pradesh,Office Supplies,Storage,142.78,1,17.85
+187,2020-04-05,Anand,Andhra Pradesh,Furniture,Furnishings,45.7,3,5.14
+188,2023-01-11,Shailendra,Meghalaya,Office Supplies,Binders,7.22,3,-5.53
+189,2022-03-06,Himani,Kerala,Office Supplies,Binders,43.19,4,-31.67
+190,2021-01-11,Kajal,Tamil Nadu,Office Supplies,Paper,131.9,3,47.82
+191,2021-06-23,Saloni,Madhya Pradesh,Technology,Phones,471.92,2,29.5
+192,2022-01-16,Nitin,Jharkhand,Office Supplies,Appliances,93.78,2,36.57
+193,2020-12-25,Gunjan,Goa,Office Supplies,Paper,47.18,7,23.59
+194,2021-07-03,Ishika,Telangana,Office Supplies,Art,19.68,6,5.71
+195,2023-10-02,Akanksha,Kerala,Office Supplies,Binders,53.4,10,25.1
+196,2022-08-24,Rohit,Telangana,Office Supplies,Binders,35.88,6,17.22
+197,2021-10-29,Anjali,Madhya Pradesh,Furniture,Tables,1579.75,7,-447.59
+198,2020-08-12,Vinay,Haryana,Furniture,Tables,1071.58,4,-553.65
+199,2023-07-03,Aman,Jharkhand,Furniture,Tables,613.91,3,-122.78
+200,2020-10-24,Kabir,West Bengal,Office Supplies,Paper,34.86,7,16.38
+201,2021-01-25,Shakshi,West Bengal,Office Supplies,Paper,155.04,4,75.97
+202,2021-01-04,Shalini,Uttarakhand,Office Supplies,Art,4.45,2,0.33
+203,2022-04-25,Mohit,Telangana,Office Supplies,Paper,5.18,1,1.88
+204,2023-03-31,Karishma,Jharkhand,Office Supplies,Paper,15.55,3,5.44
+205,2020-08-06,Anjali,Arunachal Pradesh,Office Supplies,Binders,11.43,3,5.37
+206,2021-12-14,Abhishek,Uttar Pradesh,Office Supplies,Binders,30.44,2,14.92
+207,2023-04-06,Aarushi,Telangana,Office Supplies,Paper,12.96,2,6.35
+208,2022-09-04,Tanvi,Telangana,Office Supplies,Paper,16,4,7.68
+209,2024-01-30,Jhanvi,Mizoram,Office Supplies,Appliances,32.67,3,8.49
+210,2020-10-15,Anand,Tripura,Office Supplies,Paper,126.62,6,41.15
+211,2023-11-17,Kajal,Gujarat,Technology,Machines,821.3,4,-16.43
+212,2023-12-19,Vikram,Tripura,Technology,Machines,22638.48,6,-1811.08
+213,2020-05-06,Abhishek,Himachal Pradesh,Office Supplies,Paper,21.38,4,7.48
+214,2022-05-29,Akshay,Bihar,Office Supplies,Art,8.02,3,1
+215,2022-09-08,Sudhir,Nagaland,Furniture,Furnishings,30.77,2,8.08
+216,2022-06-20,Kabir,Punjab,Office Supplies,Fasteners,18.94,3,5.92
+217,2022-12-08,Bhavya,Maharashtra,Furniture,Furnishings,122.35,3,15.29
+218,2023-04-26,Raj,Meghalaya,Furniture,Bookcases,1198.33,10,70.49
+219,2022-03-14,Vinay,Andhra Pradesh,Furniture,Furnishings,111,2,14.43
+220,2021-11-11,Sapna,Punjab,Technology,Machines,1279.97,4,415.99
+221,2020-08-05,Neha,Sikkim,Office Supplies,Storage,1856.19,7,334.11
+222,2022-01-26,Sameer,Uttarakhand,Technology,Phones,323.98,3,28.35
+223,2021-08-13,Meera,Mizoram,Office Supplies,Labels,11.81,4,3.99
+224,2023-08-26,Bhavana,Nagaland,Office Supplies,Storage,26.16,3,1.96
+225,2021-09-25,Deepti,Tamil Nadu,Office Supplies,Binders,33.57,5,-25.74
+226,2022-03-23,Deepak,Madhya Pradesh,Furniture,Furnishings,4.99,3,1.37
+227,2020-05-29,Kajal,Nagaland,Furniture,Furnishings,20.02,3,5.5
+228,2021-10-18,Karan,Himachal Pradesh,Technology,Accessories,170.24,2,53.2
+229,2020-08-24,Yash,Meghalaya,Office Supplies,Art,7.41,2,1.2
+230,2023-04-28,Vikas,Karnataka,Office Supplies,Art,6.05,3,1.59
+231,2022-03-01,Himani,Tamil Nadu,Office Supplies,Storage,16.27,1,-3.86
+232,2021-06-27,Divya,Karnataka,Technology,Phones,3499.93,7,909.98
+233,2022-10-12,Avinash,Odisha,Office Supplies,Labels,14.4,5,6.62
+234,2021-09-30,Manisha,Arunachal Pradesh,Office Supplies,Paper,122.97,3,60.26
+235,2021-06-28,Aditi,Bihar,Office Supplies,Art,9.32,4,2.7
+236,2021-11-28,Ishaan,Uttarakhand,Office Supplies,Binders,122.94,3,59.01
+237,2022-12-11,Sheetal,Maharashtra,Office Supplies,Labels,59.2,5,22.2
+238,2023-02-05,Ananya,Karnataka,Furniture,Furnishings,32.95,3,6.59
+239,2021-08-04,Jatin,Meghalaya,Furniture,Chairs,218.38,3,-10.92
+240,2022-02-28,Shalini,Tamil Nadu,Office Supplies,Binders,7.64,4,-5.86
+241,2020-10-20,Prateek,Kerala,Office Supplies,Binders,51.47,5,-39.46
+242,2024-01-09,Shreyas,Andhra Pradesh,Office Supplies,Paper,74.35,3,23.24
+243,2022-06-29,Rahul,Mizoram,Furniture,Chairs,314.35,3,-35.36
+244,2022-11-29,Ishaan,Himachal Pradesh,Office Supplies,Art,16.28,2,6.51
+245,2022-10-30,Anushka,West Bengal,Office Supplies,Storage,330.4,2,85.9
+246,2021-05-11,Arjun,Odisha,Technology,Phones,604.75,6,37.8
+247,2023-04-20,Karishma,Rajasthan,Office Supplies,Labels,9.91,3,3.22
+248,2023-01-30,Bhavana,Telangana,Office Supplies,Paper,24.9,5,11.7
+249,2022-05-30,Monica,Telangana,Furniture,Furnishings,40.48,2,14.57
+250,2020-12-07,Jatin,Jharkhand,Furniture,Chairs,366.79,7,65.21
+251,2021-03-09,Avinash,Chhattisgarh,Office Supplies,Art,6.56,2,1.9
+252,2023-07-22,Akhil,Assam,Office Supplies,Art,14.88,2,3.72
+253,2021-12-08,Ishita,Punjab,Technology,Accessories,45.48,4,15.92
+254,2022-12-19,Vaibhav,Kerala,Office Supplies,Art,25.44,6,9.92
+255,2024-02-07,Shalini,Goa,Technology,Accessories,66.3,3,8.62
+256,2021-02-19,Ravi,Kerala,Office Supplies,Art,3.36,2,0.84
+257,2024-02-08,Manisha,Arunachal Pradesh,Office Supplies,Binders,27.94,4,9.43
+258,2020-07-02,Karthik,Tripura,Technology,Phones,28.78,2,2.88
+259,2023-06-30,Aniket,Uttarakhand,Office Supplies,Labels,18.75,5,9
+260,2022-04-18,Monica,Andhra Pradesh,Office Supplies,Envelopes,6.12,3,2.88
+261,2022-04-22,Sanjay,Rajasthan,Furniture,Tables,1184.72,4,106.62
+262,2021-12-23,Dev,West Bengal,Technology,Phones,302.38,3,22.68
+263,2021-12-25,Karthik,Andhra Pradesh,Furniture,Tables,330.59,1,-143.25
+264,2024-01-01,Ishan,Jharkhand,Furniture,Tables,890.84,3,-152.72
+265,2020-05-19,Aditi,Jharkhand,Office Supplies,Art,49.65,5,20.85
+266,2022-04-20,Harsh,Arunachal Pradesh,Office Supplies,Storage,15.84,3,0
+267,2023-03-15,Ankit,Rajasthan,Office Supplies,Labels,44.4,3,22.2
+268,2021-09-04,Raman,Tripura,Office Supplies,Art,10.5,5,2.94
+269,2020-04-24,Arjun,Telangana,Furniture,Bookcases,205.67,2,-12.1
+270,2020-02-26,Kajal,Odisha,Office Supplies,Envelopes,335.72,5,113.31
+271,2021-06-19,Isha,Meghalaya,Technology,Phones,251.94,7,88.18
+272,2022-07-28,Ishan,Madhya Pradesh,Furniture,Chairs,127.3,7,-9.09
+273,2022-05-11,Shraddha,West Bengal,Office Supplies,Storage,129.3,2,6.47
+274,2022-11-07,Avinash,Mizoram,Office Supplies,Binders,673.57,2,252.59
+275,2023-02-21,Varun,Jharkhand,Office Supplies,Appliances,52.98,2,14.83
+276,2022-09-27,Gayatri,Bihar,Office Supplies,Binders,0.85,1,-0.6
+277,2021-07-08,Chirag,Uttar Pradesh,Office Supplies,Binders,8.13,7,-13.83
+278,2020-02-27,Monica,Uttar Pradesh,Technology,Accessories,79.98,2,14
+279,2021-02-28,Karishma,Uttar Pradesh,Office Supplies,Binders,1.87,1,-1.31
+280,2022-08-17,Rohit,Tamil Nadu,Furniture,Chairs,1125.49,7,98.48
+281,2021-09-21,Karthik,Haryana,Office Supplies,Binders,12.65,5,-10.12
+282,2022-12-19,Bhavya,Odisha,Office Supplies,Art,4.03,2,1.06
+283,2023-03-09,Sarika,Karnataka,Office Supplies,Labels,29.6,2,14.8
+284,2023-01-18,Nidhi,Gujarat,Office Supplies,Binders,17.09,4,5.55
+285,2020-09-01,Aniket,Haryana,Office Supplies,Storage,66.96,4,2.68
+286,2023-10-26,Uma,Haryana,Office Supplies,Binders,6.24,2,3.06
+287,2020-01-01,Nisha,Goa,Office Supplies,Paper,15.84,3,7.13
+288,2022-10-31,Suresh,Himachal Pradesh,Technology,Phones,1049.93,7,293.98
+289,2020-11-13,Khushi,Mizoram,Office Supplies,Appliances,154.9,5,40.27
+290,2020-10-18,Chirag,Chhattisgarh,Office Supplies,Paper,26.72,5,9.35
+291,2023-05-19,Jaya,Nagaland,Office Supplies,Paper,33.49,7,10.47
+292,2021-08-22,Kunal,Odisha,Furniture,Furnishings,177.68,2,46.2
+293,2022-06-22,Aditi,Jharkhand,Office Supplies,Envelopes,11.16,2,5.58
+294,2022-07-01,Deepak,Rajasthan,Technology,Accessories,62.31,3,22.43
+295,2023-11-24,Aman,West Bengal,Technology,Accessories,159.98,2,57.59
+296,2022-07-03,Sunil,Chhattisgarh,Office Supplies,Labels,18.9,6,9.07
+297,2022-10-08,Vinay,Manipur,Furniture,Furnishings,5.47,1,2.35
+298,2022-05-06,Yash,Sikkim,Office Supplies,Art,79.36,4,23.81
+299,2022-05-29,Chirag,Punjab,Office Supplies,Binders,7.18,2,2.25
+300,2022-12-31,Rohan,Haryana,Office Supplies,Storage,232.55,5,9.3
+301,2023-05-31,Sakshi,Telangana,Technology,Accessories,99.98,2,42.99
+302,2020-09-22,Advait,Chhattisgarh,Office Supplies,Paper,19.44,3,9.33
+303,2021-12-24,Tarun,Kerala,Office Supplies,Paper,12.96,2,6.35
+304,2022-07-10,Harsh,Andhra Pradesh,Office Supplies,Paper,55.48,1,26.63
+305,2023-07-25,Anushka,Goa,Office Supplies,Art,22.96,7,7.58
+306,2023-03-13,Aarushi,Haryana,Technology,Phones,28.99,1,8.41
+307,2021-06-06,Abhishek,West Bengal,Office Supplies,Paper,12.96,2,6.35
+308,2024-01-21,Gunjan,Arunachal Pradesh,Office Supplies,Art,22.96,7,6.66
+309,2020-06-20,Udit,Kerala,Office Supplies,Supplies,4164.05,5,83.28
+310,2020-10-30,Sonam,Andhra Pradesh,Office Supplies,Storage,49.63,4,3.72
+311,2023-03-02,Chetan,Rajasthan,Office Supplies,Storage,52.1,4,3.91
+312,2022-01-19,Monica,Tripura,Office Supplies,Art,26.7,2,7.48
+313,2020-01-13,Isha,Bihar,Office Supplies,Binders,40.2,5,18.09
+314,2020-04-15,Uma,Nagaland,Office Supplies,Art,13.89,3,4.58
+315,2020-06-08,Saloni,Andhra Pradesh,Office Supplies,Storage,689.82,6,20.69
+316,2022-10-16,Riya,Andhra Pradesh,Office Supplies,Binders,115.36,7,56.53
+317,2022-08-09,Rakesh,Tripura,Office Supplies,Binders,44.91,6,-35.93
+318,2020-01-12,Rajesh,Mizoram,Office Supplies,Supplies,10.3,1,-2.19
+319,2022-04-08,Sourabh,Telangana,Furniture,Tables,154.76,3,-36.11
+320,2023-04-24,Prateek,West Bengal,Technology,Accessories,116.78,2,21.9
+321,2023-05-31,Shubham,West Bengal,Furniture,Tables,653.55,3,111.1
+322,2022-09-26,Advait,Chhattisgarh,Technology,Accessories,33.9,2,2.03
+323,2020-12-14,Ankit,Kerala,Furniture,Furnishings,91.96,2,15.63
+324,2022-12-15,Sandeep,Gujarat,Furniture,Furnishings,33.11,7,12.91
+325,2022-04-25,Rohan,West Bengal,Office Supplies,Paper,19.44,3,9.33
+326,2021-10-22,Anand,Odisha,Office Supplies,Paper,55.48,1,26.63
+327,2022-03-29,Yogesh,Tamil Nadu,Office Supplies,Art,70.95,3,18.45
+328,2021-01-04,Anushka,Jharkhand,Office Supplies,Binders,65.57,2,23.77
+329,2020-10-23,Sourabh,Meghalaya,Technology,Accessories,299.97,3,131.99
+330,2023-11-23,Amrita,Uttar Pradesh,Furniture,Furnishings,8.96,2,2.78
+331,2020-03-26,Vipul,Andhra Pradesh,Technology,Phones,629.95,5,163.79
+332,2021-07-11,Ayush,Mizoram,Office Supplies,Paper,122.97,3,60.26
+333,2022-10-01,Gaurav,Telangana,Office Supplies,Paper,58.32,9,27.99
+334,2020-06-14,Mayank,Andhra Pradesh,Technology,Phones,200.97,3,50.24
+335,2021-11-23,Ayush,Andhra Pradesh,Office Supplies,Fasteners,2.37,2,0.83
+336,2021-11-15,Karan,Goa,Office Supplies,Paper,19.01,3,6.89
+337,2020-07-06,Chirag,Kerala,Furniture,Tables,1215.92,8,316.14
+338,2020-04-27,Deepti,Odisha,Office Supplies,Fasteners,49.79,8,-11.83
+339,2024-01-31,Shailendra,Punjab,Furniture,Tables,99.59,1,2.49
+340,2022-11-21,Shraddha,Sikkim,Technology,Accessories,399.96,4,139.99
+341,2020-07-28,Sachin,Tripura,Furniture,Tables,172.11,1,-94.66
+342,2020-10-25,Karan,Andhra Pradesh,Office Supplies,Fasteners,6.91,3,2.33
+343,2021-06-22,Vineet,Maharashtra,Technology,Accessories,383.98,3,81.59
+344,2023-07-01,Sameer,Gujarat,Office Supplies,Paper,10.37,2,3.63
+345,2023-09-26,Shakshi,Himachal Pradesh,Technology,Accessories,335.94,7,41.99
+346,2021-06-29,Janhvi,Uttarakhand,Office Supplies,Binders,9.58,1,3.35
+347,2023-05-12,Varun,Arunachal Pradesh,Technology,Phones,758.35,6,265.42
+348,2023-07-28,Ramesh,Punjab,Office Supplies,Storage,87.08,7,24.38
+349,2024-02-15,Meera,Nagaland,Technology,Phones,105.58,2,9.24
+350,2021-04-18,Abhishek,Goa,Technology,Accessories,217.44,6,91.32
+351,2020-03-23,Nikhil,Maharashtra,Technology,Phones,1075.09,14,94.07
+352,2020-03-23,Aditi,Sikkim,Technology,Phones,438.37,4,38.36
+353,2023-04-16,Saloni,Jharkhand,Office Supplies,Binders,18.09,7,6.56
+354,2021-11-12,Ishaan,Odisha,Furniture,Bookcases,308.5,3,-18.15
+355,2023-03-08,Gunjan,Gujarat,Office Supplies,Paper,32.4,5,15.55
+356,2020-07-04,Lakshay,Chhattisgarh,Office Supplies,Art,39.68,2,16.27
+357,2023-01-04,Tanvi,Maharashtra,Office Supplies,Art,17.86,4,1.12
+358,2022-02-21,Nisha,Meghalaya,Office Supplies,Binders,509.97,10,-407.98
+359,2021-07-13,Vineet,Rajasthan,Office Supplies,Fasteners,30.99,13,10.07
+360,2023-08-11,Rakesh,Karnataka,Technology,Phones,71.93,12,8.39
+361,2023-05-31,Vinita,Arunachal Pradesh,Office Supplies,Labels,7.83,3,3.6
+362,2021-08-13,Vishal,Rajasthan,Office Supplies,Appliances,106.96,2,31.02
+363,2023-07-31,Chirag,Chhattisgarh,Furniture,Furnishings,187.76,4,76.98
+364,2022-03-29,Gaurav,Haryana,Office Supplies,Art,39.07,6,9.77
+365,2021-04-02,Chirag,Gujarat,Technology,Machines,287.97,4,97.19
+366,2021-09-29,Manisha,Rajasthan,Office Supplies,Art,13.12,4,3.8
+367,2022-08-25,Kunal,Madhya Pradesh,Office Supplies,Art,10.75,5,3.55
+368,2020-07-01,Arjun,Bihar,Office Supplies,Fasteners,11.62,2,3.6
+369,2022-07-13,Anand,Rajasthan,Office Supplies,Art,2.69,2,1.01
+370,2023-03-14,Shreyas,Maharashtra,Furniture,Chairs,317.06,3,-18.12
+371,2022-01-10,Lakshay,Madhya Pradesh,Office Supplies,Envelopes,149.35,3,50.41
+372,2022-02-02,Ankit,Chhattisgarh,Technology,Accessories,227.98,3,28.5
+373,2021-06-13,Arjun,Rajasthan,Furniture,Furnishings,76.14,3,26.65
+374,2021-07-18,Vishal,Mizoram,Office Supplies,Binders,58.05,3,26.7
+375,2021-09-05,Sachin,Meghalaya,Office Supplies,Paper,71.28,11,34.21
+376,2023-12-04,Yogesh,Bihar,Furniture,Tables,744.1,5,-95.67
+377,2021-05-29,Vineet,Tamil Nadu,Office Supplies,Storage,44.84,5,5.61
+378,2023-01-10,Priya,Maharashtra,Furniture,Tables,401.59,2,-131.95
+379,2022-02-15,Shreyas,Tripura,Furniture,Furnishings,59.92,4,27.56
+380,2020-11-16,Anushka,Uttar Pradesh,Office Supplies,Binders,16.52,5,5.58
+381,2020-09-28,Ishan,Goa,Office Supplies,Storage,828.84,6,0
+382,2022-01-10,Ankit,Mizoram,Office Supplies,Envelopes,247.84,8,121.44
+383,2023-04-06,Abhilasha,West Bengal,Office Supplies,Binders,9.91,3,3.35
+384,2020-08-07,Vikas,Tamil Nadu,Office Supplies,Binders,2.5,3,-1.75
+385,2020-10-10,Karan,Nagaland,Furniture,Chairs,281.37,2,-12.06
+386,2021-07-10,Lakshay,Goa,Furniture,Chairs,281.37,2,-12.06
+387,2023-08-31,Gunjan,Punjab,Office Supplies,Binders,7.49,8,-5.24
+388,2020-03-23,Aditi,Odisha,Furniture,Furnishings,22.34,4,7.82
+389,2021-11-05,Aman,Mizoram,Office Supplies,Paper,48.91,1,22.99
+390,2023-05-27,Nidhi,Goa,Office Supplies,Paper,10.37,2,3.63
+391,2020-02-29,Vinita,Nagaland,Office Supplies,Art,6.24,3,0.55
+392,2021-12-22,Jhanvi,Tamil Nadu,Technology,Phones,302.38,3,37.8
+393,2021-07-06,Vinita,Uttarakhand,Furniture,Furnishings,303.25,5,63.68
+394,2023-07-16,Sagar,Andhra Pradesh,Office Supplies,Appliances,270.72,3,78.51
+395,2023-09-06,Swati,Andhra Pradesh,Furniture,Chairs,1487.04,5,148.7
+396,2021-05-05,Saurabh,Sikkim,Furniture,Chairs,230.28,3,23.03
+397,2020-06-26,Vinay,Jharkhand,Office Supplies,Binders,18.29,6,5.72
+398,2023-12-09,Anand,Haryana,Office Supplies,Art,21.4,5,6.21
+399,2020-09-11,Ayush,Bihar,Office Supplies,Labels,12.6,2,5.8
+400,2021-06-28,Karishma,Andhra Pradesh,Office Supplies,Binders,20.86,2,9.39
+401,2021-08-30,Aditi,Madhya Pradesh,Office Supplies,Storage,497.61,9,129.38
+402,2021-11-26,Riya,Haryana,Office Supplies,Art,5.34,2,1.5
+403,2023-05-17,Shreyas,Madhya Pradesh,Office Supplies,Labels,3.15,1,1.51
+404,2020-06-02,Chetan,Tamil Nadu,Office Supplies,Labels,6.91,3,2.51
+405,2020-01-30,Hari,Bihar,Office Supplies,Storage,27.1,3,2.03
+406,2020-01-19,Nikhil,Rajasthan,Office Supplies,Storage,177.57,2,-37.73
+407,2023-06-09,Anand,Assam,Technology,Phones,1679.96,5,126
+408,2022-12-08,Anand,Odisha,Technology,Accessories,159.98,2,57.59
+409,2022-01-13,Ananya,Assam,Furniture,Furnishings,17.46,2,5.94
+410,2022-01-17,Vineet,Meghalaya,Furniture,Chairs,51.96,2,12.99
+411,2021-02-02,Rohan,Mizoram,Office Supplies,Binders,17.94,3,8.61
+412,2020-10-04,Jhanvi,Haryana,Furniture,Chairs,561.58,2,70.2
+413,2022-12-02,Gaurav,Kerala,Office Supplies,Storage,99.92,5,-1.25
+414,2022-07-10,Ishita,West Bengal,Technology,Phones,19.98,2,5.19
+415,2023-08-10,Jai,Tripura,Technology,Accessories,47.79,3,16.25
+416,2020-04-30,Shivam,Manipur,Office Supplies,Art,174.95,5,45.49
+417,2020-07-07,Tarun,Bihar,Office Supplies,Storage,826,5,214.76
+418,2022-01-23,Uma,Gujarat,Office Supplies,Appliances,26.14,3,1.96
+419,2020-09-30,Raman,Bihar,Technology,Copiers,479.98,2,90
+420,2020-09-11,Aditi,Uttarakhand,Office Supplies,Labels,21.56,7,10.35
+421,2021-05-25,Janhvi,Meghalaya,Office Supplies,Binders,40.18,3,14.56
+422,2020-02-28,Gaurav,Karnataka,Office Supplies,Binders,10.9,3,3.95
+423,2021-03-26,Varun,Uttarakhand,Office Supplies,Binders,46.8,4,21.06
+424,2021-11-19,Karishma,Sikkim,Furniture,Furnishings,27.46,2,9.89
+425,2023-06-28,Nitin,Maharashtra,Office Supplies,Art,37.84,2,2.84
+426,2023-11-30,Sumit,Telangana,Office Supplies,Fasteners,5.47,6,1.85
+427,2022-11-08,Ravi,Maharashtra,Furniture,Furnishings,12.18,7,3.9
+428,2023-07-11,Sunil,Haryana,Office Supplies,Appliances,57.68,4,19.03
+429,2021-09-01,Sourabh,Jharkhand,Office Supplies,Paper,9.42,3,4.24
+430,2020-11-04,Shiv,Kerala,Office Supplies,Art,6.56,2,1.9
+431,2023-10-11,Prateek,Odisha,Office Supplies,Paper,24.56,2,11.54
+432,2022-02-06,Shashank,Jharkhand,Furniture,Chairs,127.87,3,-9.13
+433,2022-04-21,Sakshi,Arunachal Pradesh,Office Supplies,Storage,45.25,2,3.96
+434,2021-04-20,Gayatri,Sikkim,Office Supplies,Binders,11.88,2,5.35
+435,2020-10-19,Disha,Kerala,Office Supplies,Paper,35.44,1,16.66
+436,2021-06-19,Ananya,Karnataka,Office Supplies,Binders,140.74,8,52.78
+437,2021-01-18,Gaurav,Mizoram,Office Supplies,Labels,5.78,2,2.72
+438,2021-03-02,Shraddha,West Bengal,Office Supplies,Art,107.94,6,30.22
+439,2020-01-19,Shivam,Chhattisgarh,Office Supplies,Binders,16.14,3,7.91
+440,2023-10-13,Dev,Goa,Furniture,Tables,194.25,2,-38.85
+441,2021-07-02,Shreya,Mizoram,Office Supplies,Art,8.64,3,2.51
+442,2023-03-18,Advait,Karnataka,Furniture,Chairs,872.32,4,244.25
+443,2022-11-04,Shreyas,Gujarat,Technology,Copiers,1799.97,5,240
+444,2024-02-05,Jatin,Gujarat,Technology,Accessories,67.8,4,4.07
+445,2021-11-27,Aarav,Himachal Pradesh,Technology,Accessories,167.97,3,40.31
+446,2024-01-22,Utkarsh,Haryana,Office Supplies,Storage,83.25,3,14.99
+447,2021-07-15,Rohan,West Bengal,Office Supplies,Labels,9.45,3,4.54
+448,2020-01-26,Sahil,Haryana,Office Supplies,Labels,20.65,5,9.5
+449,2022-05-17,Aman,Himachal Pradesh,Office Supplies,Paper,45.36,7,21.77
+450,2020-11-13,Bhavana,Odisha,Office Supplies,Envelopes,158.13,3,77.48
+451,2021-02-02,Ananya,Uttar Pradesh,Technology,Phones,43.6,5,4.36
+452,2021-12-17,Sourabh,Kerala,Furniture,Bookcases,349.97,7,-216.98
+453,2022-12-20,Vaibhav,Mizoram,Office Supplies,Art,22.32,5,5.3
+454,2020-03-05,Pooja,West Bengal,Office Supplies,Paper,39.96,2,19.18
+455,2023-11-19,Himani,Punjab,Technology,Phones,1432,5,125.3
+456,2021-09-27,Ishan,Assam,Office Supplies,Supplies,41.04,6,11.08
+457,2020-08-11,Aditi,Gujarat,Furniture,Chairs,256.78,1,32.1
+458,2020-09-06,Prateek,Maharashtra,Technology,Accessories,58.11,2,7.26
+459,2020-09-22,Uma,Gujarat,Technology,Phones,100.79,1,6.3
+460,2020-12-10,Vikram,Nagaland,Furniture,Furnishings,66.11,4,-84.29
+461,2022-03-24,Ishan,Uttar Pradesh,Technology,Accessories,46.86,2,7.62
+462,2022-04-05,Ayesha,Tripura,Office Supplies,Appliances,35.91,3,9.7
+463,2021-08-11,Shiv,Nagaland,Furniture,Chairs,1212.96,8,-69.31
+464,2023-11-26,Shreyas,Gujarat,Office Supplies,Paper,17.47,3,5.68
+465,2021-02-03,Karthik,Odisha,Office Supplies,Binders,104.58,9,-172.56
+466,2023-03-28,Aditi,Rajasthan,Furniture,Furnishings,34.79,7,10.78
+467,2020-05-11,Himani,Tripura,Furniture,Tables,700.06,3,-130.01
+468,2023-12-24,Deepti,Maharashtra,Office Supplies,Storage,55.5,2,9.99
+469,2021-12-17,Shalini,Chhattisgarh,Office Supplies,Fasteners,7.1,2,2.4
+470,2021-05-21,Gaurav,Nagaland,Office Supplies,Binders,398.35,8,-331.96
+471,2020-05-06,Shivam,Tripura,Technology,Accessories,149.97,3,52.49
+472,2021-03-04,Ishan,Arunachal Pradesh,Furniture,Chairs,279.46,6,20.96
+473,2021-01-01,Sheetal,Meghalaya,Office Supplies,Paper,8,2,3.84
+474,2021-09-26,Kunal,Chhattisgarh,Furniture,Furnishings,310.88,2,23.32
+475,2023-12-25,Himani,Gujarat,Furniture,Chairs,232.88,5,17.47
+476,2020-11-21,Anjali,Tripura,Technology,Accessories,56.4,3,3.38
+477,2021-11-09,Tarun,Manipur,Office Supplies,Binders,91.68,3,45.84
+478,2023-01-16,Harsh,Madhya Pradesh,Technology,Phones,779.8,2,-168.96
+479,2022-08-23,Sachin,Meghalaya,Furniture,Furnishings,149.23,3,3.73
+480,2022-09-18,Sagar,Chhattisgarh,Office Supplies,Paper,15.94,4,5.78
+481,2022-12-10,Anjali,Gujarat,Office Supplies,Paper,3.98,1,1.44
+482,2023-03-10,Swati,Manipur,Office Supplies,Binders,57.42,9,26.41
+483,2022-05-01,Janhvi,Tripura,Office Supplies,Supplies,34.2,5,9.23
+484,2021-09-19,Sudhir,Sikkim,Office Supplies,Appliances,33.28,4,9.32
+485,2020-04-23,Ravi,Madhya Pradesh,Office Supplies,Art,38.52,9,11.94
+486,2022-07-11,Aditi,Arunachal Pradesh,Furniture,Furnishings,139.86,7,60.14
+487,2020-01-15,Disha,Assam,Furniture,Furnishings,10.33,3,-5.94
+488,2020-08-30,Kavya,Sikkim,Office Supplies,Paper,10.37,2,3.63
+489,2020-01-11,Vinay,Madhya Pradesh,Technology,Accessories,20.78,2,-3.64
+490,2022-02-02,Anand,Sikkim,Office Supplies,Storage,66.96,5,-13.39
+491,2023-09-03,Deepika,Nagaland,Office Supplies,Binders,2715.93,7,1276.49
+492,2020-09-28,Sakshi,Kerala,Technology,Phones,617.97,3,173.03
+493,2022-08-02,Vipul,Tamil Nadu,Office Supplies,Art,31.84,8,10.51
+494,2022-10-15,Sheetal,Jharkhand,Office Supplies,Binders,447.86,7,219.45
+495,2021-10-02,Vishal,Goa,Office Supplies,Paper,17.94,3,8.79
+496,2021-12-12,Tanvi,Nagaland,Office Supplies,Appliances,245.88,6,68.85
+497,2021-09-22,Vaibhav,Rajasthan,Office Supplies,Envelopes,56.06,6,21.02
+498,2021-11-10,Shivam,Gujarat,Furniture,Chairs,107.77,2,-29.25
+499,2022-07-24,Neha,Uttar Pradesh,Office Supplies,Paper,4.83,1,1.63
+500,2023-04-07,Gunjan,Bihar,Office Supplies,Binders,18.24,3,-31.01
+501,2023-03-04,Rajesh,Arunachal Pradesh,Technology,Phones,135.98,2,34
+502,2023-05-18,Jaya,Madhya Pradesh,Technology,Phones,44.95,1,12.59
+503,2023-11-06,Vikas,Telangana,Office Supplies,Binders,3.28,2,-2.63
+504,2020-04-15,Rajesh,Gujarat,Office Supplies,Art,21.17,9,2.38
+505,2021-06-27,Kabir,Himachal Pradesh,Technology,Phones,55.19,2,-10.12
+506,2021-08-18,Sakshi,Meghalaya,Office Supplies,Paper,12.96,2,6.22
+507,2024-02-01,Rahul,Mizoram,Office Supplies,Binders,17.96,5,5.84
+508,2020-05-07,Divya,Uttar Pradesh,Office Supplies,Supplies,5.04,2,0.15
+509,2020-03-25,Shreyas,Mizoram,Office Supplies,Appliances,208.16,1,56.2
+510,2021-04-30,Shalini,Assam,Office Supplies,Paper,116.28,3,56.98
+511,2024-02-04,Priya,Sikkim,Office Supplies,Appliances,75.6,2,-166.32
+512,2022-08-01,Raman,Nagaland,Furniture,Furnishings,29.32,2,-24.19
+513,2023-12-02,Anjali,Tamil Nadu,Office Supplies,Paper,14.62,2,6.73
+514,2023-01-18,Samir,Jharkhand,Furniture,Bookcases,290.67,2,27.36
+515,2022-05-06,Anjali,Haryana,Technology,Phones,201.58,2,20.16
+516,2022-04-12,Monica,Himachal Pradesh,Technology,Phones,83.98,2,31.49
+517,2022-11-24,Sarika,Haryana,Furniture,Chairs,225.3,2,22.53
+518,2023-03-11,Ankit,Goa,Office Supplies,Paper,48.4,5,23.23
+519,2022-07-03,Deepak,Rajasthan,Office Supplies,Storage,102.62,3,7.7
+520,2020-09-26,Kavya,Manipur,Furniture,Chairs,359.77,2,-5.14
+521,2023-08-08,Deepika,Odisha,Office Supplies,Art,13.39,3,3.18
+522,2024-01-02,Sumit,Mizoram,Furniture,Tables,567.12,10,-28.36
+523,2023-02-20,Shreyas,Tripura,Office Supplies,Storage,359.32,4,7.19
+524,2023-10-04,Mohit,West Bengal,Technology,Phones,1113.5,12,125.27
+525,2021-05-29,Harshita,Haryana,Technology,Accessories,99.99,1,38
+526,2022-08-12,Vipul,Himachal Pradesh,Office Supplies,Binders,17.46,6,-30.56
+527,2020-06-11,Deepika,Assam,Technology,Phones,57.41,6,5.74
+528,2020-08-20,Aarushi,Sikkim,Technology,Accessories,27.6,4,2.21
+529,2020-12-20,Gunjan,Uttarakhand,Office Supplies,Binders,136.96,4,51.36
+530,2020-10-11,Yogesh,Goa,Office Supplies,Paper,13.62,3,6.13
+531,2023-03-14,Priya,Punjab,Furniture,Tables,355.46,3,-184.84
+532,2021-06-17,Udit,Sikkim,Office Supplies,Binders,70.37,4,26.39
+533,2023-08-06,Advait,Meghalaya,Office Supplies,Binders,25.58,2,8.95
+534,2022-01-18,Avinash,Mizoram,Technology,Phones,464,5,134.56
+535,2023-04-28,Nidhi,Maharashtra,Office Supplies,Appliances,235.95,3,77.86
+536,2021-01-29,Anushka,Madhya Pradesh,Office Supplies,Paper,39.96,4,17.98
+537,2022-06-29,Avinash,Karnataka,Technology,Copiers,719.98,3,135
+538,2023-07-09,Rohan,Tamil Nadu,Technology,Phones,659.97,3,197.99
+539,2021-05-05,Udit,Manipur,Technology,Phones,113.73,3,32.98
+540,2023-08-12,Kunal,Tripura,Furniture,Chairs,2001.86,7,580.54
+541,2022-01-08,Chetan,Meghalaya,Office Supplies,Storage,166.72,2,41.68
+542,2023-04-19,Karishma,Himachal Pradesh,Office Supplies,Paper,47.88,6,23.94
+543,2022-02-10,Vinita,Telangana,Office Supplies,Appliances,1503.25,5,496.07
+544,2023-10-26,Sandeep,Telangana,Office Supplies,Paper,25.92,4,12.44
+545,2024-02-05,Deepika,Gujarat,Office Supplies,Binders,45.48,3,20.92
+546,2020-07-15,Vipul,Mizoram,Office Supplies,Art,289.2,6,83.87
+547,2020-05-04,Sonia,West Bengal,Furniture,Furnishings,22.2,6,9.1
+548,2020-01-01,Aman,Assam,Technology,Phones,881.93,7,229.3
+549,2021-09-30,Alia,Mizoram,Office Supplies,Binders,138.56,4,66.51
+550,2024-01-12,Sapna,Chhattisgarh,Office Supplies,Appliances,65.52,5,12.38
+551,2020-08-08,Kabir,Punjab,Office Supplies,Binders,59.81,3,19.44
+552,2020-06-17,Anand,Jharkhand,Furniture,Furnishings,73.32,6,22
+553,2023-08-07,Shakshi,Uttar Pradesh,Office Supplies,Art,8.56,2,2.65
+554,2023-06-19,Sonia,Andhra Pradesh,Technology,Phones,239.97,3,67.19
+555,2022-10-03,Kajal,Sikkim,Office Supplies,Storage,356.94,2,107.08
+556,2023-06-14,Rupal,Mizoram,Furniture,Tables,515.88,6,113.49
+557,2020-09-29,Neha,Mizoram,Office Supplies,Envelopes,15.28,2,7.49
+558,2022-08-26,Shubham,Uttarakhand,Office Supplies,Labels,15.94,4,5.18
+559,2021-04-29,Akshay,Mizoram,Furniture,Furnishings,61.54,7,-40
+560,2021-01-31,Monica,Bihar,Office Supplies,Storage,132.7,3,9.95
+561,2023-01-24,Amrita,Himachal Pradesh,Office Supplies,Paper,16.22,2,5.88
+562,2023-01-27,Anushka,Bihar,Furniture,Furnishings,56.96,2,21.08
+563,2020-09-25,Kunal,Tamil Nadu,Office Supplies,Appliances,15.56,4,4.05
+564,2023-02-06,Vishal,Bihar,Furniture,Bookcases,353.57,2,-44.2
+565,2024-02-05,Jatin,Nagaland,Furniture,Furnishings,13.96,2,6.7
+566,2022-07-31,Ananya,Assam,Office Supplies,Art,13.36,2,4.94
+567,2022-07-13,Rajesh,Maharashtra,Office Supplies,Binders,149.54,9,50.47
+568,2023-10-28,Aarushi,Meghalaya,Office Supplies,Supplies,17.14,2,4.46
+569,2022-12-21,Shalini,Manipur,Furniture,Tables,991.76,3,-347.12
+570,2023-02-28,Ayush,Maharashtra,Office Supplies,Binders,24.59,3,-38.11
+571,2023-06-17,Anand,Bihar,Office Supplies,Envelopes,13.98,2,4.72
+572,2023-03-09,Uma,Rajasthan,Office Supplies,Labels,100.24,10,33.83
+573,2023-05-14,Isha,Rajasthan,Office Supplies,Binders,1.37,1,-0.91
+574,2022-08-30,Harshita,Punjab,Office Supplies,Paper,62.02,2,22.48
+575,2021-04-01,Priya,Nagaland,Office Supplies,Binders,12.46,3,-20.56
+576,2022-12-11,Sapna,Goa,Furniture,Tables,268.94,3,-209.77
+577,2020-05-07,Ishaan,Manipur,Furniture,Chairs,585.55,3,73.19
+578,2022-07-28,Vinita,Karnataka,Furniture,Chairs,170.35,3,10.65
+579,2020-10-02,Sachin,Odisha,Office Supplies,Binders,68.48,2,25.68
+580,2021-10-24,Disha,West Bengal,Office Supplies,Storage,1676.88,6,83.84
+581,2022-09-08,Hari,Manipur,Furniture,Furnishings,48.86,7,14.17
+582,2022-10-25,Gaurav,Rajasthan,Office Supplies,Art,7.28,4,1.97
+583,2023-09-22,Amrita,Andhra Pradesh,Technology,Phones,907.15,6,90.72
+584,2022-08-09,Aarav,Andhra Pradesh,Office Supplies,Binders,18.5,3,5.78
+585,2023-07-06,Aarav,Mizoram,Office Supplies,Appliances,114.9,5,34.47
+586,2020-12-31,Kabir,Andhra Pradesh,Furniture,Tables,1706.18,9,85.31
+587,2022-08-27,Chirag,Nagaland,Technology,Phones,911.42,4,68.36
+588,2020-10-31,Sapna,Nagaland,Technology,Phones,7.99,1,0.6
+589,2023-07-09,Suresh,Karnataka,Technology,Accessories,63.98,2,10.4
+590,2022-11-07,Sandeep,Manipur,Office Supplies,Art,70.37,2,6.16
+591,2020-05-08,Rakesh,Uttarakhand,Office Supplies,Supplies,7.36,2,0.15
+592,2021-12-01,Rahul,Karnataka,Office Supplies,Art,23.1,2,10.63
+593,2021-07-24,Kabir,Telangana,Furniture,Tables,1441.3,7,245.02
+594,2020-01-08,Akanksha,Haryana,Office Supplies,Art,18.06,7,4.7
+595,2022-09-01,Abhay,Punjab,Office Supplies,Paper,79.14,3,36.4
+596,2022-06-05,Amrita,Andhra Pradesh,Furniture,Furnishings,37.4,2,14.21
+597,2022-11-20,Nidhi,Kerala,Office Supplies,Labels,491.55,5,240.86
+598,2020-02-18,Ishaan,Goa,Office Supplies,Art,14.52,3,4.79
+599,2023-01-28,Chirag,Uttarakhand,Furniture,Bookcases,212.94,3,57.49
+600,2022-02-10,Kunal,Uttarakhand,Furniture,Tables,99.92,2,-18.56
+601,2021-12-06,Gayatri,West Bengal,Furniture,Chairs,797.94,4,-57
+602,2023-08-30,Swati,Haryana,Office Supplies,Binders,8.57,3,-14.57
+603,2022-12-25,Yash,Tamil Nadu,Office Supplies,Paper,36.54,2,11.88
+604,2020-10-09,Arjun,Jharkhand,Furniture,Chairs,647.84,8,32.39
+605,2024-01-08,Himani,Kerala,Office Supplies,Envelopes,41.4,5,19.46
+606,2021-07-19,Jai,Tamil Nadu,Office Supplies,Art,35,4,10.5
+607,2021-12-03,Kunal,Tamil Nadu,Office Supplies,Binders,39.55,3,14.34
+608,2020-12-10,Kriti,Tamil Nadu,Technology,Machines,65.97,3,31.01
+609,2021-07-29,Karan,Himachal Pradesh,Furniture,Furnishings,6.24,3,2.62
+610,2020-06-28,Gaurav,West Bengal,Office Supplies,Fasteners,17.9,5,8.95
+611,2022-06-03,Kavya,Odisha,Office Supplies,Binders,3266.38,3,1061.57
+612,2020-12-11,Sachin,Jharkhand,Office Supplies,Paper,62.02,2,22.48
+613,2022-01-26,Shivam,Andhra Pradesh,Technology,Phones,139.8,5,12.23
+614,2021-09-26,Akshay,Andhra Pradesh,Technology,Phones,201.58,2,20.16
+615,2023-11-04,Karishma,Haryana,Office Supplies,Binders,3.39,4,-5.09
+616,2023-09-12,Udit,Kerala,Furniture,Bookcases,193.07,4,-19.87
+617,2023-07-04,Tarun,Chhattisgarh,Office Supplies,Paper,15.55,3,5.44
+618,2020-03-25,Jatin,Sikkim,Office Supplies,Paper,11.65,2,4.08
+619,2022-09-21,Vinay,Uttarakhand,Technology,Machines,418.8,2,-97.72
+620,2022-06-04,Utkarsh,Tamil Nadu,Office Supplies,Storage,509.49,7,-127.37
+621,2020-04-17,Sheetal,Arunachal Pradesh,Office Supplies,Appliances,471.9,6,155.73
+622,2022-12-16,Ankit,Arunachal Pradesh,Office Supplies,Art,3.52,2,1.69
+623,2022-12-24,Monica,Tripura,Furniture,Furnishings,104.01,1,14.56
+624,2023-09-04,Yash,Karnataka,Technology,Phones,284.82,1,74.05
+625,2023-10-10,Anjali,Uttar Pradesh,Office Supplies,Storage,36.84,3,10.32
+626,2022-10-12,Simran,Goa,Technology,Phones,1322.93,7,357.19
+627,2022-07-01,Vishal,Meghalaya,Office Supplies,Art,3.76,2,1.09
+628,2020-01-12,Monica,Kerala,Office Supplies,Art,21.4,5,6.21
+629,2021-09-27,Aishwarya,Manipur,Office Supplies,Binders,11.09,7,-8.13
+630,2023-06-27,Aishwarya,Maharashtra,Office Supplies,Binders,25.16,2,-16.78
+631,2021-08-15,Abhishek,Rajasthan,Office Supplies,Envelopes,24.9,4,8.4
+632,2021-02-22,Hemant,Meghalaya,Furniture,Furnishings,3.98,1,0.65
+633,2022-09-22,Aarav,Assam,Technology,Accessories,95.97,4,28.79
+634,2022-02-02,Shakshi,Mizoram,Technology,Machines,206.99,3,-172.49
+635,2021-02-28,Anushka,Maharashtra,Office Supplies,Appliances,44.42,2,3.89
+636,2020-07-30,Saloni,Arunachal Pradesh,Office Supplies,Binders,9.01,2,-7.2
+637,2021-09-15,Vineet,Uttar Pradesh,Office Supplies,Paper,19.65,3,9.04
+638,2020-04-20,Saloni,Punjab,Technology,Phones,617.97,3,160.67
+639,2023-01-20,Anand,Punjab,Office Supplies,Appliances,59.7,3,26.87
+640,2023-08-15,Vineet,Sikkim,Technology,Phones,1214.85,3,352.31
+641,2020-12-27,Ayush,Jharkhand,Technology,Accessories,196.75,6,56.57
+642,2020-07-15,Rohan,Karnataka,Office Supplies,Storage,501.81,3,0
+643,2021-07-15,Vinita,Arunachal Pradesh,Office Supplies,Storage,161.94,3,9.72
+644,2023-09-07,Saloni,Maharashtra,Furniture,Chairs,170.06,3,-4.86
+645,2021-01-21,Kajal,Goa,Technology,Phones,82.78,3,-15.18
+646,2021-01-08,Manisha,Uttarakhand,Furniture,Chairs,853.93,5,0
+647,2021-10-02,Tarun,Arunachal Pradesh,Office Supplies,Binders,8.23,3,-6.03
+648,2020-03-06,Kajal,Uttarakhand,Technology,Accessories,86.38,3,1.08
+649,2021-07-07,Bhavya,Kerala,Office Supplies,Art,20.02,9,1.75
+650,2020-11-03,Swati,Tamil Nadu,Office Supplies,Supplies,3.1,1,0.35
+651,2022-04-13,Ankit,Tamil Nadu,Furniture,Furnishings,4.27,2,0.96
+652,2022-11-02,Hemant,Uttarakhand,Furniture,Tables,447.84,5,11.2
+653,2022-11-10,Advait,Arunachal Pradesh,Technology,Phones,263.96,5,19.8
+654,2021-08-17,Harsh,Sikkim,Office Supplies,Art,71.63,11,17.91
+655,2021-09-10,Utkarsh,Goa,Office Supplies,Art,9.33,1,0.82
+656,2020-07-21,Meera,Chhattisgarh,Office Supplies,Storage,306.2,5,0
+657,2021-12-03,Ishika,Andhra Pradesh,Furniture,Tables,85.98,1,22.35
+658,2023-10-05,Ananya,Nagaland,Technology,Accessories,223.96,4,53.75
+659,2023-09-06,Udit,Himachal Pradesh,Office Supplies,Paper,41.47,8,14.52
+660,2021-02-17,Ramesh,Mizoram,Office Supplies,Binders,3.17,3,-2.43
+661,2023-03-13,Suresh,Telangana,Furniture,Chairs,1228.47,5,0
+662,2021-08-04,Akanksha,Tamil Nadu,Office Supplies,Binders,31.09,3,-22.8
+663,2020-03-21,Chirag,Rajasthan,Office Supplies,Paper,335.52,4,117.43
+664,2022-09-10,Vinita,Bihar,Office Supplies,Fasteners,6.08,1,3.04
+665,2020-09-10,Kajal,Meghalaya,Office Supplies,Art,32.76,7,3.69
+666,2021-09-05,Ankit,Telangana,Office Supplies,Binders,13.92,3,4.87
+667,2020-02-21,Vaibhav,West Bengal,Office Supplies,Binders,334.77,7,108.8
+668,2023-10-12,Monica,Meghalaya,Office Supplies,Art,5.25,4,1.64
+669,2021-11-19,Shweta,Mizoram,Office Supplies,Art,32.4,5,10.37
+670,2021-08-20,Kriti,Andhra Pradesh,Office Supplies,Paper,25.92,5,9.07
+671,2021-10-13,Chirag,Maharashtra,Office Supplies,Fasteners,21.31,6,7.19
+672,2021-04-28,Akash,Sikkim,Office Supplies,Binders,2.69,1,0.84
+673,2020-04-01,Karthik,Manipur,Office Supplies,Art,6.6,3,2.9
+674,2023-08-01,Prachi,Himachal Pradesh,Office Supplies,Paper,310.69,7,108.74
+675,2020-05-06,Shalini,Mizoram,Office Supplies,Binders,19.92,5,6.97
+676,2020-06-16,Sudhir,Nagaland,Technology,Phones,575.92,2,71.99
+677,2020-10-17,Vinita,Sikkim,Office Supplies,Binders,5.18,6,-3.63
+678,2023-12-19,Jatin,Tamil Nadu,Technology,Phones,73.98,2,19.97
+679,2023-07-30,Jai,Tamil Nadu,Office Supplies,Art,5.58,1,2.18
+680,2020-09-07,Utkarsh,Andhra Pradesh,Office Supplies,Paper,177.54,4,62.14
+681,2022-08-25,Deepika,West Bengal,Office Supplies,Appliances,32.43,2,3.24
+682,2021-07-16,Shailendra,Rajasthan,Office Supplies,Paper,21.84,3,10.92
+683,2021-02-25,Bhavya,Uttar Pradesh,Office Supplies,Binders,15.6,5,7.64
+684,2022-01-07,Aditi,West Bengal,Technology,Accessories,479.97,3,163.19
+685,2021-06-25,Shraddha,Mizoram,Office Supplies,Labels,14.62,2,6.87
+686,2022-12-06,Nidhi,Tamil Nadu,Office Supplies,Paper,19.44,3,9.33
+687,2020-03-18,Isha,Maharashtra,Office Supplies,Storage,220.78,3,-44.16
+688,2021-05-20,Akshay,Arunachal Pradesh,Office Supplies,Storage,281.42,11,-35.18
+689,2021-08-02,Sourabh,Telangana,Office Supplies,Binders,180.96,6,67.86
+690,2021-03-15,Gaurav,Maharashtra,Office Supplies,Art,4.37,3,0.38
+691,2020-09-23,Yogesh,Maharashtra,Furniture,Furnishings,19.52,2,5.37
+692,2022-09-07,Bhavya,Andhra Pradesh,Office Supplies,Binders,9.81,5,-6.87
+693,2022-08-17,Hari,Arunachal Pradesh,Furniture,Furnishings,213.22,3,15.99
+694,2023-06-08,Deepika,Meghalaya,Technology,Copiers,559.99,1,175
+695,2021-11-02,Anand,Nagaland,Furniture,Chairs,478.48,2,47.85
+696,2023-02-17,Isha,Arunachal Pradesh,Furniture,Chairs,172.19,2,-46.74
+697,2021-11-01,Sheetal,Arunachal Pradesh,Furniture,Furnishings,69.01,2,12.08
+698,2021-06-18,Prachi,Tamil Nadu,Furniture,Chairs,63.88,1,10.65
+699,2023-09-25,Karthik,Tamil Nadu,Furniture,Tables,502.49,3,-87.94
+700,2020-05-25,Aditi,Sikkim,Office Supplies,Binders,196.7,6,68.85
+701,2021-09-25,Pranav,Andhra Pradesh,Office Supplies,Paper,10.37,2,3.63
+702,2022-09-17,Alia,Tamil Nadu,Office Supplies,Paper,14.35,3,4.49
+703,2021-11-29,Advait,Uttarakhand,Office Supplies,Labels,2.88,1,1.41
+704,2020-11-06,Sahil,Bihar,Office Supplies,Binders,41.9,6,14.14
+705,2020-07-13,Aarav,Telangana,Office Supplies,Storage,23.92,4,4.07
+706,2023-08-15,Karan,Tamil Nadu,Office Supplies,Binders,14.3,6,4.65
+707,2021-09-14,Avinash,West Bengal,Furniture,Bookcases,119.83,1,7.05
+708,2022-01-11,Mayank,Gujarat,Office Supplies,Art,5.56,2,2.22
+709,2020-04-11,Tanvi,Himachal Pradesh,Office Supplies,Paper,32.4,5,15.55
+710,2022-03-27,Shakshi,Sikkim,Office Supplies,Paper,177.2,5,83.28
+711,2023-06-05,Sakshi,Tripura,Technology,Phones,197.97,3,57.41
+712,2023-06-12,Suresh,Tripura,Furniture,Chairs,854.94,3,213.74
+713,2021-07-08,Uma,Uttarakhand,Furniture,Furnishings,124.11,9,52.13
+714,2024-02-08,Sheetal,Goa,Office Supplies,Labels,14.4,5,7.06
+715,2021-05-03,Gaurav,West Bengal,Technology,Phones,575.97,4,43.2
+716,2023-07-12,Jaya,Andhra Pradesh,Office Supplies,Paper,10.37,2,3.63
+717,2020-12-05,Ananya,Telangana,Office Supplies,Paper,49.12,4,23.09
+718,2023-04-22,Jatin,Uttar Pradesh,Office Supplies,Binders,18.28,5,6.4
+719,2023-05-28,Vinita,Andhra Pradesh,Technology,Phones,164.85,3,47.81
+720,2022-09-30,Shalini,Bihar,Office Supplies,Binders,7.71,2,2.8
+721,2023-12-11,Aarushi,Jharkhand,Furniture,Tables,698.35,3,-17.46
+722,2020-08-06,Anand,Tripura,Office Supplies,Storage,249.75,9,44.96
+723,2022-03-28,Kavya,Tamil Nadu,Technology,Phones,255.94,8,28.79
+724,2023-07-27,Monica,Chhattisgarh,Furniture,Chairs,123.14,4,13.85
+725,2021-09-28,Vineet,Uttar Pradesh,Office Supplies,Binders,11.26,4,3.8
+726,2022-07-10,Yash,Manipur,Office Supplies,Paper,35.86,9,13
+727,2023-12-27,Kajal,Gujarat,Technology,Accessories,23.84,4,3.28
+728,2022-10-21,Vaibhav,Haryana,Furniture,Chairs,512.36,3,-14.64
+729,2021-05-12,Jatin,Chhattisgarh,Office Supplies,Fasteners,3.49,2,0.57
+730,2020-12-13,Shakshi,Arunachal Pradesh,Office Supplies,Art,22.29,7,3.9
+731,2022-03-19,Gunjan,Tamil Nadu,Office Supplies,Paper,16.03,3,5.61
+732,2021-05-24,Dev,Himachal Pradesh,Furniture,Tables,351.22,3,4.39
+733,2023-09-29,Shivam,Manipur,Office Supplies,Binders,29.93,7,-46.39
+734,2021-11-08,Riya,Haryana,Technology,Phones,38.27,4,3.83
+735,2020-11-14,Ishita,Maharashtra,Office Supplies,Storage,55.92,5,6.29
+736,2020-07-25,Sunil,Uttarakhand,Technology,Phones,13.49,1,-2.25
+737,2021-02-25,Sudhir,Telangana,Technology,Phones,23.99,2,-13.99
+738,2022-08-06,Jhanvi,Nagaland,Furniture,Furnishings,31.98,2,1.2
+739,2023-08-24,Ayesha,Goa,Office Supplies,Art,41.58,2,4.68
+740,2021-12-21,Yash,Rajasthan,Office Supplies,Appliances,39.48,1,11.05
+741,2023-12-19,Jhanvi,Sikkim,Office Supplies,Art,17.94,3,4.49
+742,2020-07-27,Ankit,Tamil Nadu,Technology,Accessories,2.97,3,1.31
+743,2021-12-20,Gayatri,Maharashtra,Office Supplies,Fasteners,6.54,3,2.68
+744,2020-04-18,Raman,Manipur,Furniture,Chairs,259.14,4,-25.91
+745,2022-05-21,Deepika,Gujarat,Office Supplies,Binders,13.9,2,4.52
+746,2023-06-30,Ayush,West Bengal,Technology,Phones,359.98,2,93.59
+747,2020-05-09,Isha,Manipur,Furniture,Tables,70.56,1,-4.03
+748,2020-09-28,Kriti,Tripura,Office Supplies,Binders,20.88,2,9.6
+749,2024-01-05,Jaya,Mizoram,Office Supplies,Binders,3.81,1,1.83
+750,2020-10-06,Tarun,Punjab,Office Supplies,Binders,6.1,2,2.21
+751,2021-07-05,Varun,Bihar,Office Supplies,Storage,342.86,3,38.57
+752,2021-01-26,Alia,Andhra Pradesh,Furniture,Furnishings,16.74,5,-14.23
+753,2023-11-15,Udit,Maharashtra,Furniture,Chairs,981.37,2,-140.2
+754,2023-02-19,Avinash,Jharkhand,Office Supplies,Storage,25.98,1,-5.2
+755,2020-04-16,Aman,Gujarat,Office Supplies,Binders,27.36,3,-21.89
+756,2020-12-12,Isha,Gujarat,Office Supplies,Paper,104.85,1,50.33
+757,2021-10-13,Chirag,Haryana,Office Supplies,Binders,8.7,2,3.16
+758,2022-01-06,Sandeep,Maharashtra,Office Supplies,Paper,19.92,4,9.76
+759,2021-07-16,Abhishek,Mizoram,Furniture,Furnishings,43.02,3,15.49
+760,2023-04-28,Harshita,Maharashtra,Office Supplies,Binders,89.71,6,30.28
+761,2022-08-09,Nitin,Telangana,Office Supplies,Paper,22.83,3,10.73
+762,2023-01-14,Shashank,Andhra Pradesh,Technology,Accessories,41.94,2,15.1
+763,2020-10-10,Jai,Punjab,Office Supplies,Paper,11.96,2,5.86
+764,2022-12-30,Hemant,Mizoram,Office Supplies,Art,13.12,4,3.8
+765,2023-03-11,Anand,Jharkhand,Office Supplies,Storage,535.41,3,160.62
+766,2021-06-22,Bhavya,Chhattisgarh,Office Supplies,Art,99.2,5,25.79
+767,2022-10-16,Akanksha,Arunachal Pradesh,Furniture,Chairs,801.57,2,50.1
+768,2023-04-20,Aniket,Mizoram,Furniture,Tables,272.85,1,27.28
+769,2020-10-14,Ramesh,Odisha,Office Supplies,Appliances,4.99,3,-12.98
+770,2020-05-09,Vipul,Telangana,Office Supplies,Envelopes,87.92,5,29.67
+771,2023-12-31,Sameer,Karnataka,Furniture,Chairs,657.93,5,-93.99
+772,2021-02-06,Shalini,Chhattisgarh,Office Supplies,Binders,1.04,1,-1.83
+773,2020-08-04,Nidhi,Arunachal Pradesh,Technology,Phones,35.98,2,10.07
+774,2020-02-06,Monica,Bihar,Office Supplies,Art,5.96,2,1.67
+775,2021-04-30,Abhay,Meghalaya,Technology,Accessories,159.98,2,57.59
+776,2020-06-04,Chirag,Goa,Office Supplies,Art,11.52,4,3.23
+777,2022-11-23,Aarushi,Kerala,Furniture,Chairs,717.72,3,71.77
+778,2021-10-25,Akhil,Rajasthan,Office Supplies,Storage,236.5,10,68.59
+779,2020-08-24,Swati,Nagaland,Furniture,Tables,170.35,3,19.16
+780,2022-04-03,Ramesh,Gujarat,Office Supplies,Art,19.68,6,6.49
+781,2022-08-22,Shalini,Gujarat,Office Supplies,Storage,26.63,1,1.33
+782,2020-10-06,Simran,Maharashtra,Office Supplies,Binders,8.16,5,-5.71
+783,2021-04-12,Meera,Tripura,Technology,Accessories,1023.94,8,179.19
+784,2021-03-26,Isha,Manipur,Office Supplies,Art,9.24,1,0.92
+785,2021-03-23,Gaurav,Gujarat,Technology,Accessories,479.04,10,-29.94
+786,2022-07-09,Sudhir,Gujarat,Technology,Accessories,99.98,2,8
+787,2022-08-21,Sonia,Assam,Technology,Phones,604.75,6,60.48
+788,2022-06-08,Pooja,Nagaland,Office Supplies,Supplies,40.7,5,11.8
+789,2021-09-24,Manisha,Jharkhand,Technology,Phones,302.38,3,37.8
+790,2020-10-25,Chirag,Uttarakhand,Technology,Accessories,45,3,4.95
+791,2022-01-11,Sheetal,Chhattisgarh,Office Supplies,Storage,53.72,4,15.04
+792,2021-10-29,Rohit,Nagaland,Office Supplies,Supplies,8187.65,5,327.51
+793,2023-09-10,Ananya,Madhya Pradesh,Furniture,Furnishings,77.92,8,34.28
+794,2022-08-14,Isha,Himachal Pradesh,Office Supplies,Paper,6.48,1,3.18
+795,2021-10-20,Gaurav,Andhra Pradesh,Office Supplies,Supplies,15.52,4,4.5
+796,2023-01-08,Kunal,Punjab,Office Supplies,Storage,123.55,3,-29.34
+797,2021-09-11,Anjali,Odisha,Technology,Phones,911.98,2,114
+798,2020-04-22,Jatin,Chhattisgarh,Furniture,Chairs,674.35,3,-109.58
+799,2021-10-14,Pranav,Sikkim,Furniture,Furnishings,134.01,9,36.18
+800,2021-12-17,Bhavya,Manipur,Technology,Accessories,170.97,3,70.1
+801,2021-11-07,Alia,Sikkim,Technology,Accessories,111.93,7,34.7
+802,2021-05-30,Sachin,Goa,Furniture,Chairs,67.88,2,18.33
+803,2023-10-05,Simran,Bihar,Office Supplies,Labels,162.89,13,76.56
+804,2020-06-09,Kajal,Manipur,Furniture,Furnishings,25.71,3,9.26
+805,2022-01-27,Akanksha,Andhra Pradesh,Office Supplies,Binders,2177.58,8,-3701.89
+806,2020-06-13,Harshita,Gujarat,Furniture,Furnishings,17.5,3,-10.06
+807,2023-10-28,Sumit,Telangana,Office Supplies,Binders,16.78,4,-26.85
+808,2022-12-16,Ishan,Nagaland,Technology,Accessories,431.14,9,-26.95
+809,2021-08-16,Hari,Andhra Pradesh,Office Supplies,Binders,8.88,5,-13.32
+810,2023-12-27,Aman,Kerala,Office Supplies,Appliances,4.84,2,-12.09
+811,2023-09-15,Sachin,Haryana,Technology,Accessories,238,2,38.08
+812,2022-04-28,Mayank,Uttar Pradesh,Office Supplies,Paper,65.78,11,32.23
+813,2021-06-11,Kunal,Kerala,Office Supplies,Storage,276.28,2,0
+814,2022-04-14,Kunal,Nagaland,Office Supplies,Fasteners,14.32,5,5.19
+815,2022-12-30,Jai,Tripura,Furniture,Furnishings,129.89,6,12.99
+816,2022-07-18,Suresh,Haryana,Office Supplies,Envelopes,48.94,7,16.52
+817,2023-04-02,Vinay,Tripura,Furniture,Bookcases,1367.84,8,259.89
+818,2023-08-09,Janhvi,Gujarat,Office Supplies,Labels,17.54,3,5.92
+819,2021-01-20,Jatin,Andhra Pradesh,Furniture,Furnishings,44.13,4,12.14
+820,2020-09-07,Sarika,Arunachal Pradesh,Office Supplies,Appliances,62.92,1,10.22
+821,2020-12-10,Gayatri,Andhra Pradesh,Office Supplies,Paper,78.3,2,29.36
+822,2020-04-01,Mayank,Uttar Pradesh,Office Supplies,Binders,19.75,3,6.91
+823,2021-08-14,Jatin,Arunachal Pradesh,Office Supplies,Fasteners,5.68,2,1.92
+824,2020-03-31,Gaurav,Maharashtra,Office Supplies,Binders,26.7,5,12.55
+825,2020-01-29,Sakshi,Telangana,Technology,Accessories,21.2,2,9.12
+826,2023-04-05,Divya,Manipur,Office Supplies,Storage,838.38,2,226.36
+827,2020-08-05,Kajal,Gujarat,Furniture,Tables,218.75,2,-161.88
+828,2023-07-03,Lakshay,Telangana,Office Supplies,Appliances,2.6,1,0.29
+829,2022-05-31,Bhavana,Maharashtra,Office Supplies,Paper,39.96,2,18.78
+830,2022-05-10,Hemant,Arunachal Pradesh,Office Supplies,Supplies,102.3,10,26.6
+831,2021-06-14,Abhilasha,Jharkhand,Office Supplies,Storage,21.36,2,5.77
+832,2023-11-19,Nikhil,Karnataka,Office Supplies,Paper,93.02,3,33.72
+833,2021-07-05,Mayank,West Bengal,Office Supplies,Appliances,1089.75,3,305.13
+834,2023-12-12,Aarushi,Meghalaya,Office Supplies,Paper,447.84,8,219.44
+835,2021-07-06,Meera,Nagaland,Office Supplies,Art,16.4,5,4.26
+836,2021-04-14,Anand,Manipur,Technology,Phones,399.96,5,35
+837,2022-02-16,Sonam,Tripura,Office Supplies,Storage,158.9,5,7.95
+838,2020-05-10,Nikhil,Maharashtra,Office Supplies,Binders,13.18,1,4.78
+839,2022-08-05,Priya,Rajasthan,Office Supplies,Appliances,101.96,2,27.53
+840,2024-02-11,Pranav,Andhra Pradesh,Office Supplies,Paper,259.74,13,124.68
+841,2022-05-22,Ravi,Maharashtra,Technology,Accessories,255.42,9,104.72
+842,2021-03-28,Tanvi,Arunachal Pradesh,Office Supplies,Paper,20.94,3,9.84
+843,2020-11-20,Janhvi,Manipur,Office Supplies,Paper,110.96,2,53.26
+844,2020-04-21,Mohit,Telangana,Furniture,Chairs,340.14,7,21.26
+845,2023-08-26,Ravi,Punjab,Technology,Accessories,16.36,1,1.64
+846,2022-07-18,Samir,Gujarat,Office Supplies,Storage,15.78,2,0.63
+847,2023-11-24,Chirag,Kerala,Office Supplies,Art,45.98,2,12.87
+848,2023-06-25,Yogesh,Rajasthan,Office Supplies,Appliances,79.47,3,22.25
+849,2023-09-21,Anand,Jharkhand,Office Supplies,Art,4.56,2,2.01
+850,2023-10-21,Rohit,Maharashtra,Furniture,Chairs,1133.35,5,294.67
+851,2022-05-06,Yash,Arunachal Pradesh,Technology,Phones,135.99,1,36.72
+852,2023-12-28,Prateek,Himachal Pradesh,Office Supplies,Art,15.96,7,7.02
+853,2020-04-17,Simran,Tamil Nadu,Furniture,Tables,489.23,2,41.93
+854,2021-03-25,Bhavana,Maharashtra,Technology,Accessories,62.91,3,22.65
+855,2022-05-09,Rajesh,Bihar,Technology,Accessories,199.98,2,83.99
+856,2020-02-24,Raman,Assam,Office Supplies,Appliances,76.12,2,22.07
+857,2023-04-16,Kavya,Jharkhand,Technology,Copiers,1199.98,3,434.99
+858,2023-07-22,Tarun,Telangana,Technology,Phones,445.96,5,55.75
+859,2021-11-11,Suresh,Mizoram,Furniture,Furnishings,327.76,8,91.77
+860,2021-02-12,Ramesh,Karnataka,Furniture,Furnishings,121.38,4,-3.03
+861,2022-10-03,Ankit,Mizoram,Technology,Accessories,95.98,3,-10.8
+862,2021-07-23,Shalini,Meghalaya,Office Supplies,Storage,423.28,11,110.05
+863,2023-09-30,Shraddha,Jharkhand,Technology,Copiers,549.99,1,275
+864,2022-01-06,Sahil,Uttarakhand,Office Supplies,Appliances,167.54,3,37.23
+865,2022-10-07,Harshita,Uttarakhand,Office Supplies,Envelopes,38.34,3,17.25
+866,2024-01-12,Shivam,Mizoram,Furniture,Furnishings,53.88,6,22.63
+867,2023-01-08,Shashank,Meghalaya,Technology,Phones,299.98,2,83.99
+868,2021-01-27,Jhanvi,Uttarakhand,Furniture,Bookcases,155.46,4,-7.77
+869,2020-03-23,Karthik,Rajasthan,Technology,Phones,178.38,2,22.3
+870,2023-04-07,Mohit,Arunachal Pradesh,Office Supplies,Paper,15.55,3,5.44
+871,2023-10-03,Akshay,Himachal Pradesh,Office Supplies,Labels,20.88,8,9.6
+872,2020-05-02,Janhvi,Kerala,Technology,Phones,1091.17,4,68.2
+873,2020-10-28,Deepak,Gujarat,Technology,Phones,219.17,2,-43.83
+874,2020-10-12,Shreyas,Chhattisgarh,Office Supplies,Binders,2060.74,7,643.98
+875,2020-05-05,Amrita,Uttarakhand,Office Supplies,Paper,5.98,1,2.69
+876,2020-12-24,Aditi,Jharkhand,Office Supplies,Fasteners,4.46,3,-0.95
+877,2020-11-19,Vaibhav,Punjab,Office Supplies,Binders,9.35,5,-6.54
+878,2022-10-16,Ananya,Assam,Furniture,Furnishings,12.35,1,5.43
+879,2022-07-03,Shubham,Rajasthan,Office Supplies,Art,40.97,1,10.65
+880,2023-10-09,Yash,Bihar,Office Supplies,Fasteners,22.96,2,10.79
+881,2020-09-09,Hari,Sikkim,Office Supplies,Storage,375.34,1,18.77
+882,2023-03-12,Abhay,Mizoram,Office Supplies,Binders,196.21,7,98.11
+883,2021-06-25,Jai,Karnataka,Technology,Phones,806.34,8,50.4
+884,2022-12-15,Amrita,Tripura,Furniture,Furnishings,85.44,3,31.61
+885,2023-10-06,Khushi,Bihar,Office Supplies,Paper,31.1,6,10.89
+886,2023-05-07,Vaibhav,Madhya Pradesh,Office Supplies,Art,47.96,5,4.2
+887,2020-09-25,Shraddha,Himachal Pradesh,Technology,Accessories,158.93,7,41.72
+888,2023-01-28,Sonam,Tripura,Office Supplies,Appliances,211.25,6,15.84
+889,2022-06-02,Jatin,Mizoram,Office Supplies,Supplies,5.55,2,-1.04
+890,2023-10-22,Aniket,Andhra Pradesh,Office Supplies,Labels,2.95,1,1
+891,2020-07-08,Deepika,Haryana,Office Supplies,Binders,14.04,3,6.74
+892,2021-02-15,Anushka,Karnataka,Technology,Accessories,272.61,13,98.14
+893,2023-01-03,Sourabh,Gujarat,Office Supplies,Binders,30.96,8,-52.63
+894,2023-06-28,Jhanvi,Nagaland,Office Supplies,Binders,62.94,3,30.21
+895,2023-05-09,Anushka,Uttar Pradesh,Office Supplies,Paper,91.36,5,29.69
+896,2022-05-31,Shweta,Uttarakhand,Office Supplies,Appliances,152.24,5,17.13
+897,2021-12-16,Himani,Gujarat,Office Supplies,Appliances,152.91,3,42.81
+898,2020-01-04,Swati,Telangana,Office Supplies,Paper,92.94,3,41.82
+899,2023-02-16,Uma,Odisha,Office Supplies,Binders,17.86,4,6.25
+900,2022-08-30,Dev,Odisha,Office Supplies,Binders,46.44,3,15.09
+901,2023-08-10,Aarav,Mizoram,Furniture,Chairs,195.14,4,-12.2
+902,2021-06-17,Harsh,Rajasthan,Furniture,Tables,853.09,6,-227.49
+903,2022-11-11,Harshita,Haryana,Office Supplies,Paper,15.55,3,5.44
+904,2021-06-18,Jaya,Tripura,Office Supplies,Paper,114.2,5,52.53
+905,2020-11-13,Aarav,Andhra Pradesh,Office Supplies,Binders,17.96,4,8.26
+906,2020-04-20,Kavya,Mizoram,Office Supplies,Fasteners,12.67,7,4.56
+907,2021-03-14,Himani,Tamil Nadu,Technology,Accessories,339.96,4,122.39
+908,2023-03-05,Manisha,Andhra Pradesh,Office Supplies,Art,10.72,2,1.74
+909,2021-11-07,Manisha,Manipur,Office Supplies,Binders,76.78,4,-58.86
+910,2022-11-10,Chetan,Kerala,Office Supplies,Supplies,9.18,2,1.15
+911,2022-10-15,Vaibhav,Goa,Furniture,Bookcases,638.82,9,172.48
+912,2022-01-30,Vinita,Mizoram,Furniture,Furnishings,289.24,7,26.03
+913,2020-11-07,Aarav,Maharashtra,Office Supplies,Binders,69.46,2,22.57
+914,2023-10-05,Jhanvi,Goa,Office Supplies,Storage,344.91,3,10.35
+915,2023-08-07,Karthik,Haryana,Furniture,Chairs,421.37,2,-6.02
+916,2022-09-01,Jhanvi,Gujarat,Furniture,Chairs,500.24,13,145.07
+917,2022-02-12,Vineet,Nagaland,Office Supplies,Paper,20.12,2,9.26
+918,2023-09-09,Anand,Telangana,Office Supplies,Binders,896.99,1,421.59
+919,2020-01-17,Divya,Sikkim,Office Supplies,Art,3.91,1,1.03
+920,2020-02-09,Akhil,Goa,Office Supplies,Supplies,7.63,3,-1.81
+921,2021-02-28,Jatin,Tamil Nadu,Office Supplies,Paper,11.56,2,5.66
+922,2021-03-17,Simran,Chhattisgarh,Office Supplies,Paper,25.92,4,12.44
+923,2020-07-19,Sonia,Gujarat,Office Supplies,Paper,45.92,4,22.5
+924,2023-02-05,Jhanvi,Goa,Office Supplies,Binders,49.57,2,17.35
+925,2023-06-04,Varun,Odisha,Office Supplies,Paper,15.55,3,5.44
+926,2023-09-11,Kavya,Punjab,Office Supplies,Supplies,6.8,1,0.51
+927,2021-02-16,Anjali,Goa,Furniture,Furnishings,4.22,3,1.27
+928,2020-09-02,Vikas,Arunachal Pradesh,Technology,Phones,143.64,9,10.77
+929,2021-01-28,Uma,Karnataka,Office Supplies,Paper,31.1,6,10.89
+930,2021-12-28,Saloni,West Bengal,Office Supplies,Paper,223.06,9,69.71
+931,2021-03-01,Simran,Assam,Office Supplies,Paper,19.44,3,9.53
+932,2020-10-19,Nikhil,Mizoram,Office Supplies,Binders,8.29,2,2.69
+933,2021-02-01,Deepika,Assam,Furniture,Furnishings,13.28,2,6.37
+934,2020-10-12,Ananya,Himachal Pradesh,Office Supplies,Binders,12.67,3,4.44
+935,2022-03-05,Kunal,Jharkhand,Office Supplies,Supplies,25.5,3,6.63
+936,2023-12-05,Aarav,Uttarakhand,Office Supplies,Fasteners,40.1,14,14.53
+937,2022-03-20,Rohan,Jharkhand,Office Supplies,Envelopes,4.72,2,1.65
+938,2021-02-05,Nikhil,Goa,Office Supplies,Paper,23.98,3,7.49
+939,2023-01-14,Shivam,Bihar,Office Supplies,Envelopes,130.46,6,44.03
+940,2022-07-23,Vishal,Odisha,Furniture,Furnishings,6.28,1,2.64
+941,2023-10-01,Harshita,Jharkhand,Technology,Accessories,95.1,5,30.43
+942,2020-12-03,Rahul,Madhya Pradesh,Office Supplies,Paper,25.92,4,12.44
+943,2020-08-20,Nidhi,Himachal Pradesh,Office Supplies,Storage,48.84,4,13.19
+944,2021-10-20,Ayesha,Haryana,Technology,Phones,1007.94,7,75.6
+945,2020-06-23,Rakesh,Himachal Pradesh,Office Supplies,Binders,25.68,3,-39.8
+946,2023-06-15,Yogesh,Himachal Pradesh,Office Supplies,Binders,12.38,3,-19.81
+947,2020-05-23,Swati,Uttarakhand,Office Supplies,Binders,6.53,4,-4.57
+948,2021-07-20,Sudhir,West Bengal,Office Supplies,Binders,2.86,3,-2.29
+949,2021-09-25,Yogesh,Uttar Pradesh,Office Supplies,Binders,20.86,8,-16.68
+950,2021-06-14,Suresh,Nagaland,Technology,Accessories,176.8,8,22.98
+951,2020-08-15,Shakshi,Haryana,Furniture,Furnishings,10.68,4,4.06
+952,2023-11-09,Kunal,Goa,Office Supplies,Paper,17.34,3,8.5
+953,2022-07-07,Khushi,Mizoram,Office Supplies,Paper,3.38,1,1.55
+954,2022-05-24,Abhilasha,Bihar,Office Supplies,Art,8.64,3,2.51
+955,2022-11-25,Ishika,Tripura,Technology,Accessories,149.97,3,52.49
+956,2021-12-12,Sumit,Rajasthan,Office Supplies,Art,8.56,2,2.48
+957,2021-02-24,Ayesha,Sikkim,Technology,Phones,213.48,3,16.01
+958,2020-11-09,Kriti,West Bengal,Office Supplies,Binders,22.72,4,7.38
+959,2023-09-24,Pooja,Haryana,Technology,Phones,579.95,5,168.19
+960,2024-01-22,Aditi,Assam,Furniture,Furnishings,29.12,4,12.52
+961,2023-11-08,Ananya,Kerala,Furniture,Tables,1202.94,3,300.74
+962,2020-12-03,Riya,Chhattisgarh,Office Supplies,Paper,13.36,2,6.41
+963,2022-11-29,Nisha,Andhra Pradesh,Office Supplies,Paper,109.92,2,53.86
+964,2023-07-02,Sapna,Meghalaya,Office Supplies,Paper,13.36,2,6.41
+965,2023-02-13,Anjali,Mizoram,Office Supplies,Envelopes,29.81,2,10.81
+966,2022-10-29,Karishma,Jharkhand,Office Supplies,Binders,505.18,4,-336.78
+967,2022-02-04,Ramesh,Andhra Pradesh,Furniture,Tables,174.06,3,-110.76
+968,2023-09-21,Pranav,Tamil Nadu,Office Supplies,Binders,25.3,5,11.89
+969,2023-12-20,Akhil,Andhra Pradesh,Office Supplies,Storage,95.94,3,9.59
+970,2021-11-21,Rakesh,West Bengal,Technology,Accessories,92.52,9,18.5
+971,2021-11-27,Rohit,Arunachal Pradesh,Office Supplies,Art,53.94,3,15.64
+972,2020-04-12,Monica,Madhya Pradesh,Office Supplies,Binders,3.65,3,-6.02
+973,2021-11-11,Shashank,Punjab,Office Supplies,Paper,31.1,6,10.89
+974,2024-02-03,Rahul,Chhattisgarh,Office Supplies,Binders,23.74,2,8.31
+975,2022-09-09,Karthik,Manipur,Technology,Accessories,357,3,57.12
+976,2021-12-21,Vikas,West Bengal,Office Supplies,Appliances,19.9,1,8.96
+977,2024-01-13,Anushka,Tripura,Furniture,Furnishings,70.71,1,4.95
+978,2022-05-17,Aditi,Telangana,Office Supplies,Art,21.24,3,8.07
+979,2023-11-14,Sanjay,West Bengal,Office Supplies,Art,57.75,5,16.17
+980,2023-07-09,Pooja,Goa,Office Supplies,Paper,14.94,3,7.02
+981,2022-05-16,Dev,Odisha,Technology,Accessories,239.98,3,53.99
+982,2021-06-05,Sarika,Nagaland,Technology,Machines,559.71,3,-121.27
+983,2022-01-05,Aarav,Bihar,Office Supplies,Binders,1793.98,2,843.17
+984,2021-08-03,Bhavya,Andhra Pradesh,Technology,Accessories,475.94,7,95.19
+985,2020-09-11,Rajesh,Manipur,Office Supplies,Labels,14.4,5,7.06
+986,2023-05-09,Kriti,Nagaland,Office Supplies,Binders,7.68,5,-11.52
+987,2023-06-04,Advait,Assam,Office Supplies,Storage,264.32,2,19.82
+988,2023-01-26,Shiv,Maharashtra,Furniture,Furnishings,31.98,2,2
+989,2020-03-31,Anand,Madhya Pradesh,Furniture,Furnishings,41.88,6,12.15
+990,2023-06-23,Rakesh,Jharkhand,Office Supplies,Labels,58.48,8,27.49
+991,2024-01-26,Pranav,Arunachal Pradesh,Office Supplies,Storage,64.78,1,-14.58
+992,2023-04-21,Ayesha,Jharkhand,Technology,Phones,32.38,3,4.32
+993,2021-08-23,Rahul,Manipur,Furniture,Furnishings,42.37,2,8.47
+994,2021-03-21,Nisha,Tripura,Technology,Machines,399.54,4,-559.36
+995,2020-08-01,Kabir,Goa,Furniture,Furnishings,57.69,3,23.65
+996,2023-08-29,Anjali,Meghalaya,Office Supplies,Binders,42.81,3,20.12
+997,2021-11-12,Samir,Bihar,Office Supplies,Paper,12.96,2,6.22
+998,2020-12-11,Pranav,Mizoram,Furniture,Furnishings,821.88,6,213.69
+999,2020-01-19,Chirag,Mizoram,Technology,Phones,104.85,3,28.31
