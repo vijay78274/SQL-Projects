@@ -1,1 +1,12 @@
+Q.1 Find the total sales amount for each branch
+select branch, sum(unit_price*quantity) from walmartdb group by branch;
+
+Q.2 Calculate the average customer rating for each city.
+select city, avg(rating) from walmartdb group by city; 
+
+Q.3 Count the number of sales transactions for each customer type.
+select customer_type, count(payment_method) from walmartdb group by customer_type;
+
+Q.4 Find the total quantity of products sold for each product line.
+select product_line, count(product_line) as product from walmartdb group by product_line;
 
