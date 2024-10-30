@@ -1,0 +1,85 @@
+Q.1 Find total sales for each category
+use amazon;
+select category, sum(quantity) as total_sales from amazon_db group by category; 
+
+Q.2 Find out average qty ordered per category
+select category, avg(quantity) as avg_qnty from amazon_db group by category;  
+
+Q.3 Calculate the profit margin percentage for each sale (Profit divided by Sales)
+select sales,round(profit/sales*100,2) as percentage from amazon_db;
+
+Q.4 Find out states with highest total orders
+select state, sum(quantity) as total_orders from amazon_db group by state order by sum(quantity)  desc limit 1;
+
+Q.5 Top 5 products whose revenue has decreased in comparison to previous year?
+WITH AnnualRevenue AS (
+    SELECT 
+        Sub_Category,
+        YEAR(Order_Date) AS year,
+        SUM(Sales) AS annual_revenue
+    FROM 
+        amazon_db
+    GROUP BY 
+        Sub_Category, YEAR(Order_Date)
+),
+RevenueChange AS (
+    SELECT 
+        curr.Sub_Category,
+        curr.year,
+        curr.annual_revenue,
+        (curr.annual_revenue - prev.annual_revenue) AS revenue_change
+    FROM 
+        AnnualRevenue curr
+    LEFT JOIN 
+        AnnualRevenue prev 
+    ON 
+        curr.Sub_Category = prev.Sub_Category
+        AND curr.year = prev.year + 1
+)
+SELECT 
+    Sub_Category,
+    year,
+    annual_revenue,
+    revenue_change
+FROM 
+    RevenueChange
+WHERE 
+    revenue_change < 0
+ORDER BY 
+    revenue_change ASC
+LIMIT 5;
+
+or 
+
+SELECT 
+    Sub_Category,
+    year,
+    annual_revenue,
+    annual_revenue - previous_revenue AS revenue_change
+FROM (
+    SELECT 
+        Sub_Category,
+        YEAR(Order_Date) AS year,
+        SUM(Sales) AS annual_revenue,
+        LAG(SUM(Sales)) OVER(PARTITION BY Sub_Category ORDER BY YEAR(Order_Date)) AS previous_revenue
+    FROM 
+        amazon_db
+    GROUP BY 
+        Sub_Category, YEAR(Order_Date)
+) AS RevenueData
+WHERE 
+    previous_revenue IS NOT NULL AND annual_revenue - previous_revenue < 0 
+ORDER BY 
+    revenue_change ASC
+LIMIT 5;
+
+
+Q.6 Find out top 5 customers who made the highest profits
+select customer, sum(profit) from amazon_db group by customer order by sum(profit) desc limit 5; 
+
+Q.7 Determine the month with the highest number of orders.
+select month(order_date) as month, count(quantity) from amazon_db group by month(order_date) order by count(quantity) desc limit 1;
+
+Q.8 Calculate the percentage contribution of each sub-category to the total sales amount for the year 2023.
+select sub_category, (sum(sales)/(select sum(sales) from amazon_db where year(order_date)=2023)) *100 
+as percentage from amazon_db where year(order_date) = 2023 group by sub_category;
