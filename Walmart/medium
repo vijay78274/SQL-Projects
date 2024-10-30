@@ -1,0 +1,21 @@
+Q.5 Find the total sales amount and average customer rating for each branch.
+select product_line, 
+round(sum(unit_price*quantity),2) as total_sales_amount, 
+round(avg(rating),2) as rating 
+from walmartdb 
+group by product_line;
+
+Q.6 Calculate the total sales amount for each city and gender combination.
+select gender, city, 
+sum(unit_price*quantity) as total_sales
+from walmartdb 
+group by
+city, gender order by city;
+
+Q.7 Find the average quantity of products sold for each product line to female customers.
+select product_line, avg(quantity)
+from 
+walmartdb where 
+gender = 'Female' 
+group by 
+product_line;
