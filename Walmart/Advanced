@@ -1,3 +1,4 @@
+
 Q.10 Calculate the total sales amount for each hour of the day
 select CONCAT(CEIL(time),':',
 LPAD(Floor(time*60 % 60),2,'0')) as hour_time,
@@ -17,3 +18,56 @@ from
 walmartdb 
 group by 
 branch having avg(rating) > 6;
+
+Q.13 Find the total VAT collected for each product line where the total sales amount is more than 500.
+select product_line, sum(total) as sales,sum(vat) as total_vat 
+from 
+walmartdb 
+group by 
+product_line having sales>500 ;
+
+Q.14 Calculate the average sales amount for each gender in each branch.
+select gender, branch, avg(total)
+from
+walmartdb 
+group by 
+gender, branch order by branch;
+
+Q.15 Count the number of sales transactions for each day of the week.
+select dayname(date) as day, count(payment_method) as transactions 
+from 
+walmartdb group by day;
+
+Q.16 Find the total sales amount for each city and customer type combination where the number of sales transactions is greater than 50
+select  city, customer_type, sum(total) as amount 
+from 
+walmartdb 
+group by 
+city, customer_type 
+having count(payment_method)>50;
+
+Q.17 Calculate the average unit price for each product line and payment method combination
+select product_line, payment_method, avg(unit_price) as average_unit_price
+from 
+walmartdb 
+group by product_line, payment_method;
+
+Q.18 Find the total sales amount for each branch and hour of the day combination.
+select branch, hour(time), sum(total) as total 
+from 
+walmartdb 
+group by hour(time), branch;
+
+Q.19 Calculate the total sales amount and average customer rating for each product line where the total sales amount is greater than 1000.
+select product_line, sum(total) as amount, avg(rating) 
+from walmartdb 
+group by 
+product_line having amount > 1000;
+
+Q.20 Calculate the total sales amount for morning (6 AM to 12 PM), afternoon (12 PM to 6 PM), and evening (6 PM to 12 AM) periods using the time condition.
+SELECT 
+    SUM(CASE WHEN HOUR(time) BETWEEN 6 AND 11 THEN total ELSE 0 END) AS morning_sales,
+    SUM(CASE WHEN HOUR(time) BETWEEN 12 AND 17 THEN total ELSE 0 END) AS afternoon_sales,
+    SUM(CASE WHEN HOUR(time) BETWEEN 18 AND 23 THEN total ELSE 0 END) AS evening_sales
+FROM 
+    walmartdb;
