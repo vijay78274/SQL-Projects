@@ -1,0 +1,19 @@
+Q.10 Calculate the total sales amount for each hour of the day
+select CONCAT(CEIL(time),':',
+LPAD(Floor(time*60 % 60),2,'0')) as hour_time,
+sum(total) from walmartdb 
+group by 
+hour_time; 
+
+Q.11 Find the total sales amount for each month. (return month name and their sales)
+select month(date) as month,sum(total) 
+from 
+walmartdb 
+group by month;
+
+Q.12 Calculate the total sales amount for each branch where the average customer rating is greater than 8.
+select branch, avg(rating), sum(total) 
+from 
+walmartdb 
+group by 
+branch having avg(rating) > 6;
