@@ -19,3 +19,38 @@ walmartdb where
 gender = 'Female' 
 group by 
 product_line;
+
+Q.8 Count the number of sales transactions for members in each branch.
+select branch, customer_type, sum(quantity) 
+from 
+walmartdb
+where customer_type='Member' 
+group by branch;
+
+Q.9 Find the total sales amount for each day. (Return day name and their total sales order DESC by amt)
+select dayname(date) as day_name, sum(total) as amount 
+from 
+walmartdb 
+group by day_name 
+order by amount desc;
+
+Q.10 Calculate the total sales amount for each hour of the day
+select CONCAT(CEIL(time),':',
+LPAD(Floor(time*60 % 60),2,'0')) as hour_time,
+sum(total) from walmartdb 
+group by 
+hour_time; 
+
+Q.11 Find the total sales amount for each month. (return month name and their sales)
+select month(date) as month,sum(total) 
+from 
+walmartdb 
+group by month;
+
+Q.12 Calculate the total sales amount for each branch where the average customer rating is greater than 8.
+select branch, avg(rating), sum(total) 
+from 
+walmartdb 
+group by 
+branch having avg(rating) > 6;
+
