@@ -1,0 +1,81 @@
+Q1. Write a SQL query to retrieve all columns for sales made on '2022-11-05:
+select *From sales 
+where
+sales_date='2022-11-05';
+
+Q2. Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022:
+select * from sales 
+where 
+category = 'Clothing' and month(sales_date)='11' and year(sales_date) = '2022' and quantity>=4;
+
+Q3. Write a SQL query to calculate the total sales (total_sale) for each category.
+select category, sum(total_sale) as total_sales 
+from 
+sales group by category; 
+
+Q4. Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.
+select avg(age) average_age 
+from 
+sales where category='Beauty';
+
+Q5. Write a SQL query to find all transactions where the total_sale is greater than 1000.
+use retail;
+select *from sales where total_sale > 1000;
+
+Q6. Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.
+select category, gender, count(transactions_id) 
+from 
+sales 
+group by gender, category order by category;
+
+Q7. Write a SQL query to calculate the average sale for each month. Find out best selling month in each year
+select year, month, avg_sale
+from 
+(
+	select 
+		extract(year from sales_date) as year,
+		extract(month from sales_date) as month,
+        avg(total_sale) as avg_sale,
+        rank() over(partition by extract(year from sales_date) order by avg(total_sale) desc) as ranks
+        from sales group by 1, 2
+)
+as t1
+where ranks=1;
+
+Q8. Write a SQL query to find the top 5 customers based on the highest total sales
+select customer, sum(total_sale) as total 
+from 
+sales 
+group by customer order by total desc limit 5;
+
+Q9. Write a SQL query to find the number of unique customers who purchased items from each category
+select category,
+count(distinct customer) as unique_customer
+from 
+sales group by category;
+
+Q10. Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)
+
+// Subquerry Approach
+select shifts, count(transactions_id) as count
+from
+(
+	select case when extract(hour from sales_time) < 12 then 'Morning' 
+    when extract(hour from sales_time) between 12 and 17 then 'Afternoon' 
+	else 'Evening' end as shifts, transactions_id from sales
+) as q1
+group by shifts;
+
+// CTE Approach
+with newTable 
+as
+(
+	select *, 
+    case when extract(hour from sales_time) < 12 then 'Morning'
+	when extract(hour from sales_time) between 12 and 17 then 'Afternoon'
+    else 'Evening'
+    end as shifts
+    from sales
+)
+select shifts, count(*) as total from newTable
+group by shifts;
