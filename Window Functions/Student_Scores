@@ -1,0 +1,159 @@
+### Student data.
+
+CREATE TABLE student_scores (
+    student_id INT PRIMARY KEY,
+    student_name VARCHAR(50),
+    exam_date DATE,
+    score INT,
+    class VARCHAR(50)
+);
+
+INSERT INTO student_scores (student_id, student_name, exam_date, score, class)
+VALUES
+(1, 'Alice', '2023-01-15', 85, 'A'),
+(2, 'Bob', '2023-01-15', 90, 'A'),
+(3, 'Charlie', '2023-01-15', 78, 'A'),
+(4, 'Diana', '2023-02-01', 88, 'B'),
+(5, 'Eve', '2023-02-01', 95, 'B'),
+(6, 'Frank', '2023-02-01', 84, 'B'),
+(7, 'Grace', '2023-03-10', 92, 'A'),
+(8, 'Hank', '2023-03-10', 87, 'A'),
+(9, 'Ivy', '2023-03-10', 82, 'A'),
+(10, 'Jack', '2023-04-15', 76, 'B'),
+(11, 'Kate', '2023-04-15', 89, 'B'),
+(12, 'Leo', '2023-04-15', 91, 'B'),
+(13, 'Mia', '2023-05-12', 80, 'A'),
+(14, 'Nick', '2023-05-12', 93, 'A'),
+(15, 'Olivia', '2023-05-12', 87, 'A'),
+(16, 'Paul', '2023-06-05', 86, 'B'),
+(17, 'Quincy', '2023-06-05', 88, 'B'),
+(18, 'Rita', '2023-06-05', 90, 'B'),
+(19, 'Steve', '2023-07-07', 95, 'A'),
+(20, 'Tom', '2023-07-07', 89, 'A'),
+(21, 'Uma', '2023-07-07', 84, 'A'),
+(22, 'Victor', '2023-08-10', 78, 'B'),
+(23, 'Wendy', '2023-08-10', 90, 'B'),
+(24, 'Xander', '2023-08-10', 85, 'B'),
+(25, 'Yara', '2023-09-12', 92, 'A'),
+(26, 'Alice', '2023-10-15', 76, 'A'),
+(27, 'Bob', '2023-10-15', 87, 'A'),
+(28, 'Charlie', '2023-10-15', 97, 'A'),
+(29, 'Diana', '2023-11-01', 78, 'B'),
+(30, 'Eve', '2023-11-01', 95, 'B'),
+(31, 'Frank', '2023-11-01', 94, 'B'),
+(32, 'Grace', '2023-12-10', 92, 'A'),
+(33, 'Hank', '2023-12-10', 78, 'A'),
+(34, 'Ivy', '2023-12-10', 72, 'A'),
+(35, 'Jack', '2024-01-15', 67, 'B'),
+(36, 'Kate', '2024-01-15', 98, 'B'),
+(37, 'Leo', '2024-01-15', 71, 'B'),
+(38, 'Mia', '2024-02-12', 90, 'A'),
+(39, 'Nick', '2024-02-12', 72, 'A'),
+(40, 'Olivia', '2024-02-12', 78, 'A'),
+(41, 'Paul', '2024-03-05', 68, 'B'),
+(42, 'Quincy', '2024-03-05', 67, 'B'),
+(43, 'Rita', '2024-03-05', 89, 'B'),
+(44, 'Steve', '2024-04-07', 77, 'A'),
+(45, 'Tom', '2024-04-07', 78, 'A'),
+(46, 'Uma', '2024-04-07', 92, 'A'),
+(47, 'Victor', '2024-05-10', 98, 'B'),
+(48, 'Wendy', '2024-05-10', 95, 'B'),
+(49, 'Xander', '2024-05-10', 80, 'B'),
+(50, 'Yara', '2024-06-12', 86, 'A'),
+(51, 'Yara', '2024-07-12', 90, 'A');
+
+select *from student_scores;
+
+Q1 Rank students based on their scores for each exam.
+select *, rank() over(partition by exam_date order by score desc)  as ranks from student_scores;
+
+Q2 Determine the dense rank of students based on their scores.
+select * ,dense_rank() over(order by score desc) as ranks from student_scores;
+
+Q3 Calculate the score difference between the current and previous exam for each student.
+select student_name, exam_date, score, score - LAG(score) OVER (PARTITION BY student_name 
+ORDER BY exam_date) as diff from student_scores
+order by student_name, exam_date;
+
+Q4 List students who improved their score compared to the previous exam
+select student_name, exam_date, score
+from 
+(
+	select student_name,exam_date,score,
+	lag(score) over (partition by student_name order by exam_date) as diff 
+    from 
+    student_scores
+) 
+as subquery
+where score>diff;
+
+Q5 Determine the highest score for each class.
+select class, score , ranks from
+( 
+select class, score,
+row_number() over (partition by class order by score desc) as ranks 
+from 
+student_scores
+) as sub 
+where ranks='1';
+
+Q6 Reset the rank for students after every 5 students based on their scores.
+
+####CTE method : 
+
+with RanksStudent as (
+	select student_id, student_name, score, 
+    row_number() over (order by score desc) as overall_rank 
+    from 
+    student_scores
+),
+RankedInGroup as(
+	select student_id, student_name, score, overall_rank, ceil(overall_rank/5) as group_number,
+    row_number() over (partition by ceil(overall_rank/5) order by score desc) as group_ranks from RanksStudent 
+)
+select student_name, score, group_ranks from RankedInGroup order by overall_rank;
+
+####subquerry method : 
+
+select student_id, student_name, score,
+row_number() over (partition by ceil(overall_rank/5) order by score desc) as rank_within
+from 
+(
+	select student_id, student_name, score, row_number() over(order by score desc) as overall_rank
+    from student_scores
+) as rankedScore order by overall_rank;
+
+select student_id, student_name, score, row_number() over (order by score desc) as overall_rank from student_scores;
+
+Q7 Show the count of students who improved their score compared to the previous exam.
+select count(student_name) as scored_more_than_prev from
+(
+	select student_name, score, exam_date, 
+    lag(score) over (partition by student_name order by exam_date) 
+    as prevs
+    from student_scores
+) as subquerry
+where score>prevs;
+
+Q8 Find the percentage increase in scores for each student compared to their previous exam.
+select *from student_scores;
+select student_name, score, percentage
+from
+(
+	select student_name, exam_date, score,
+	((score - lag(score) over (partition by student_name order by exam_date))/lag(score) over (partition by student_name order by exam_date))*100
+	as percentage from student_scores
+) as subquerry
+where  percentage is not null;
+
+Q9 List all students with their scores and whether they improved from the last exam (yes/no).
+select student_name, score, result , case when result>0 then 'yes' else 'no' end as status from(
+	select student_name, score, score - lag(score) over (partition by student_name order by exam_date) as result from student_scores
+) as subquerry
+where result is not null;
+
+Q10 Rank students within their class, considering ties.
+select student_name, class, score, ranks from
+(
+	select student_name, score, class, dense_rank() over (partition by class order by score desc) as ranks from student_scores
+) as subquerry;
