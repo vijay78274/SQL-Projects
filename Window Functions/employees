@@ -1,0 +1,51 @@
+Q1. Find the row number of each employee ordered by salary.
+select *, row_number() over (order by salary) as salary_ranks from employees;
+
+Q2. Rank employees based on their salaries.
+select *, rank() over (order by salary desc) as ranks from employees;
+
+Q3. Dense rank employees within each department based on salary.
+select *, dense_rank() over (partition by department order by salary desc) as dense_ranks from employees;
+
+Q4. Rank employees by hire date.
+select *, rank() over (order by hire_date) as hire_rank from employees;
+
+Q5. Find the row number of each employee within their department based on hire date.
+select *, row_number() over (partition by department order by hire_date) as row_numbers from employees;
+
+Q6. Show the employee name and salary of the highest-paid employee in each department.
+select emp_name, salary, rowNumbers from
+(
+	select emp_name, salary, row_number() over (partition by department order by salary desc) as rowNumbers from employees
+) as subquery
+where rowNumbers = 1;
+
+Q7. Calculate the rank difference between employees with the same salary across departments.
+select emp_id, emp_name, salary, deparRank, globalRank, globalRank - deparRank from (
+	select emp_id, emp_name, department, salary, rank() over (partition by department order by salary desc) as deparRank, 
+    rank() over (order by salary desc) as globalRank 
+    from employees
+) as subquery;
+
+Q8. Get the 2nd highest salary in each department, showing the employee name.
+select emp_id, emp_name, salary, hire_date, ranks
+from
+(
+	select *, dense_rank() over (partition by department order by salary desc) as ranks from employees 
+)
+as subquery
+where ranks = 2;
+
+Q9. Find the average salary of the top 3 highest-paid employees in each department.
+with TempTable as(
+select emp_id, emp_name, department, salary, hire_date, ranks from 
+(
+	select *, row_number() over (partition by department order by salary desc) as ranks from employees 
+)
+as subquery
+where ranks<=3
+) 
+select department, avg(salary) from TempTable group by department;
+
+ Q10. Assign a dense rank to employees based on their hire date, resetting at each department change
+select *,dense_rank() over (partition by department order by hire_date) as dense_ranks from employees; 
