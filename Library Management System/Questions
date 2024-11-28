@@ -1,0 +1,26 @@
+Q1 Select all books issued by the employee with emp_id = 'E101'.
+select *from issued_status where issued_emp_id = 'E101';
+
+Q2 List Members Who Have Issued More Than One Book -- Objective: Use GROUP BY to find members who have issued more than one book.
+select issued_member_id, count(*) as no_of_book_issued from issued_status group by issued_member_id having count(*)>1;
+
+Q3 Find Total Rental Income by Category
+select category, sum(rental_price*datediff(return_date,issued_date)) as retal_revenue
+from 
+(
+	select b.category , i.issued_date, r.return_date, b.rental_price from books b join issued_status i on b.isbn = i.issued_book_isbn 
+    join return_status r on i.issued_id = r.issued_id
+) as subquerry
+group by b.category;
+
+Q4 List Members Who Registered in the Last 180 Days
+with temp as 
+(
+	select max(issued_date) as max_date from issued_status
+)
+select * from issued_status, temp where issued_date > date_sub(max_date,interval 20 day);
+
+Q5 List Employees with Their Branch Manager's Name and their branch details
+select e.emp_name as employee_name, e.position, e.emp_id as emp_id, em.emp_id as manager_id, em.emp_name as manager_name, b.branch_address, b.contact_no
+from employees e join branch b on e.branch_id=b.branch_id left join employees em on em.emp_id = b.manager_id;
+
