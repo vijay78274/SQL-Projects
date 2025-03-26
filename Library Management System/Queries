@@ -1,0 +1,7 @@
+1. insert into books values (978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.');
+2. update members set member_address='345 Main St' wehere member_id='C101';
+3. delete from issued_status where issued_id='IS121';
+4. select *From issued_status where issued_emp_id='E101';
+5. select issued_member_id,count(*) as 'books issued' from issued_status group by issued_member_id having count(*)>1;
+6. create table issue_count as select issued_book_name,count(*) from issued_status group by issued_book_name; 
+7. 
