@@ -4,4 +4,12 @@
 4. select *From issued_status where issued_emp_id='E101';
 5. select issued_member_id,count(*) as 'books issued' from issued_status group by issued_member_id having count(*)>1;
 6. create table issue_count as select issued_book_name,count(*) from issued_status group by issued_book_name; 
-7. 
+7. select sum(b.rental_price*days) as total_income from books b join
+  (
+  select ist.issued_book_isbn as isbn, ret.return_date-ist.issued_date as days from issued_status ist join return_status ret
+  on ist.issued_id=ret.issued_id
+  ) day_table
+  on day_table.isbn=b.isbn;
+8. select * From members where datediff(curdate(), reg_date) < 600;
+9. select e.emp_name, m.emp_name,b.manager_id,b.branch_id,b.branch_address,b.contact_no from employees e join branch b on
+ e.branch_id=b.branch_id join employees m on b.manager_id=m.emp_id;
