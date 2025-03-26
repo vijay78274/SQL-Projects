@@ -1,1 +1,22 @@
+You have two tables: Product and Supplier.
+- Product Table Columns: Product_id, Product_Name, Supplier_id, Price
+- Supplier Table Columns: Supplier_id, Supplier_Name, Country
 
+
+CREATE TABLE suppliers(supplier_id int PRIMARY KEY,
+					  supplier_name varchar(25),
+					  country VARCHAR(25)
+
+INSERT INTO suppliers
+VALUES(501, 'alan', 'India'),
+		(502, 'rex', 'US'),
+		(503, 'dodo', 'India'),
+		(504, 'rahul', 'US'),
+		(505, 'zara', 'Canda'),
+		(506, 'max', 'Canada')
+;
+
+
+
+Write an SQL query to find the name of the product with the highest 
+-- price in each country.
