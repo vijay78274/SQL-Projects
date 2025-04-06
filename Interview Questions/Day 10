@@ -11,3 +11,11 @@ INSERT INTO Transactions (id, country, state, amount, trans_date) VALUES
 (122, 'US', 'declined', 2000, '2018-12-19'),
 (123, 'US', 'approved', 2000, '2019-01-01'),
 (124, 'DE', 'approved', 2000, '2019-01-07');
+
+Q1. Write an SQL query to find for each month and country, 
+    the number of transactions and their total amount, 
+    the number of approved transactions and their total amount.
+
+select month(trans_date), country, count(*) as total_count, sum(case when state='approved' then 1 else 0 end) as approved_count,
+sum(amount) as total_amount, sum(case when state='approved' then amount else 0 end) as approved_amount
+from transactions1 group by country, month(trans_date);
