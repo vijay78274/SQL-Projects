@@ -32,3 +32,11 @@ INSERT INTO reviews (review_id, user_id, submit_date, product_id, stars) VALUES
 (1531, 785, '2023-01-15 00:00:00', 69852, 5),
 (1620, 641, '2023-01-22 00:00:00', 50001, 3),
 (1709, 829, '2023-01-30 00:00:00', 69852, 4);
+
+Q1. Given the reviews table, write a query to retrieve 
+    the average star rating for each product, grouped by month. 
+    The output should display the month as a numerical value, 
+    product ID, and average star rating rounded to two decimal places. 
+    Sort the output first by month and then by product ID.
+
+select month(submit_date) as months, product_id, avg(stars) from reviews group by month(submit_date), product_id order by months, product_id;
