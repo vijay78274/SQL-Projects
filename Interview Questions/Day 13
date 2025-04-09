@@ -28,3 +28,15 @@ INSERT INTO fb_posts (post_id, user_id, likes, comments, post_date) VALUES
 (18, 102, 50, 15, '2024-03-15'),
 (19, 103, 30, 10, '2024-03-16'),
 (20, 101, 60, 20, '2024-03-17');
+
+Q1. Identify the top 3 posts with the highest engagement 
+    (likes + comments) for each user on a Facebook page. Display 
+    the user ID, post ID, engagement count, and rank for each post.
+
+select user_id, post_id,engagement_count, ranks
+from
+(
+	select user_id, post_id, likes+comments as engagement_count, row_number() over (partition by user_id order by likes+comments desc) 
+    as ranks from fb_posts
+) as subquerry
+where ranks<=3;
