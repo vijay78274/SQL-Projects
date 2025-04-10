@@ -16,3 +16,11 @@ VALUES
     (324, 789, 'Software Engineer', 'Software engineer designs, develops, tests, and maintains software applications.'),
     (890, 123, 'Data Scientist', 'Data scientist analyzes and interprets complex data to help organizations make informed decisions.'),
     (753, 123, 'Data Scientist', 'Data scientist analyzes and interprets complex data to help organizations make informed decisions.');
+
+Q.1 Write a query to retrieve the count of companies
+    that have posted duplicate job listings.
+
+select *from job_listings;
+select sum(uniques) as count_company from (
+	select company_id, count(title)-count(distinct(title)) as uniques from job_listings group by company_id) 
+as sub;
