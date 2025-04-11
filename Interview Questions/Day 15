@@ -34,3 +34,13 @@ INSERT INTO Sales (Region, Amount, SaleDate) VALUES
 ('South', 6700.00, '2024-02-26'),
 ('East', 5100.00, '2024-02-27'),
 ('West', 7600.00, '2024-02-28');
+
+Q1. Identify the region with the lowest sales amount for the previous month. 
+    return region name and total_sale amount.
+SELECT 
+	region,
+	SUM(amount) as total_sales
+FROM sales1
+GROUP BY region
+ORDER BY total_sales ASC
+LIMIT 1;
