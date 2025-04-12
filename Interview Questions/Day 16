@@ -17,3 +17,7 @@ VALUES
     (17, 'Partner A', '2024-02-29 16:00:00', '2024-02-29 16:45:00'),
     (18, 'Partner B', '2024-02-29 17:15:00', '2024-02-29 18:00:00'),
     (19, 'Partner C', '2024-02-29 18:30:00', '2024-02-29 19:15:00');
+
+Q1. How many delayed orders does each delivery partner have, 
+    considering the predicted delivery time and the actual delivery time?
+select del_partner, count(*) from order_details where predicted_time < delivery_time group by del_partner;
