@@ -26,3 +26,9 @@ VALUES
     ('Hyderabad', 114, 14, '2021-10-25'),
     ('Pune', 115, 15, '2021-10-28'),
     ('Jaipur', 116, 16, '2021-10-30');
+
+Q1. Which metro city had the highest number of restaurant orders in September 2021?
+    Write the SQL query to retrieve the city name and the total count of orders, ordered by the total count of orders in descending order.
+    Note metro cites are 'Delhi', 'Mumbai', 'Bangalore', 'Hyderabad'
+select city, count(order_id) from restaurant_orders where city in ('Delhi','Mumbai','Bangalore','Hyderabad')
+and order_date between '2021-09-01' and '2021-09-30' group by city order by count(order_id) desc;
