@@ -1,0 +1,11 @@
+CREATE TABLE student_names(
+    student_id INT,
+    name VARCHAR(50)
+);
+
+INSERT INTO student_names (student_id, name) VALUES
+(1, 'RAM'),
+(2, 'ROBERT'),
+(3, 'ROHIM'),
+(4, 'RAM'),
+(5, 'ROBERT');
