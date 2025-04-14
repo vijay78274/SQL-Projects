@@ -9,3 +9,6 @@ INSERT INTO student_names (student_id, name) VALUES
 (3, 'ROHIM'),
 (4, 'RAM'),
 (5, 'ROBERT');
+
+Q1. Get the count of distint student that are not unique 
+select name, count(*) from student_names group by name having count(*)=1;
