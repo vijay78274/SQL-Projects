@@ -38,3 +38,11 @@ INSERT INTO zomato_orders (order_id, customer_id, order_date, price, city) VALUE
 (26, 117, '2023-11-16', 180.75, 'Mumbai'),
 (27, 117, '2023-11-16', 180.75, 'Mumbai'),
 (28, 117, '2023-11-16', 180.75, 'Mumbai');
+
+ Q1. Find city wise customers count who have placed 
+     more than three orders in November 2023.
+select city, count(*) from (
+select city, customer_id, count(*) from zomato_orders where month(order_date) = 11 group by city, 
+customer_id having count(*)>3
+) sub 
+group by city;
