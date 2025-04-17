@@ -20,3 +20,6 @@ INSERT INTO employees (emp_id, emp_name, manager_id) VALUES
 (12, 'Jessica Adams', 6),        -- Jessica Adams reports to David Lee
 (13, 'Kevin Harris', 6);         -- Kevin Harris reports to David Lee
 
+-- Write a SQL query to retrieve the emp_id, emp_name, and manager_name 
+-- from the given employee table. 
+select e.emp_id, e.emp_name, m.emp_name as manager from employees e, employees m where e.manager_id = m.emp_id;
