@@ -31,3 +31,15 @@ INSERT INTO orders (date, product_id, product_name, revenue) VALUES
 ('2024-01-11', 103, 'iPhone 12 Pro', 1100.00),
 ('2024-01-12', 102, 'iPhone 13 Pro Max', 1250.00),
 ('2024-01-12', 104, 'iPhone 11', 1400.00);
+
+Q1. Write a SQL query to calculate the running total revenue for each combination of date and product ID.
+    Expected Output Columns: date, product_id, product_name, revenue, running_total ORDER BY product_id, date ascending
+
+    select o1.date, o1.product_id, o1.product_name, o1.revenue, sum(o2.revenue) as running_total 
+    from 
+    orders1 o1 
+    join 
+    orders1 o2 
+    on o1.product_id=o2.product_id and o1.date>=o2.date 
+    group by o1.date, o1.product_id, o1.product_name, o1.revenue
+    order by o1.product_id, o1.date;
