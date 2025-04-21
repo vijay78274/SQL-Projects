@@ -49,3 +49,10 @@ INSERT INTO returns VALUES
 (12, 13, '2022-01-15', 13),
 (13, 14, '2022-01-16', 14),
 (14, 15, '2022-01-17', 15);
+
+Q1. Find the top 5 customer with the highest percentage of returned items out of their total orders.
+select o.customer_id, round(sum(r.returned_items)*100/sum(o.total_items_ordered),2) as percentage 
+from orders o 
+join returns r on o.order_id=r.order_id 
+group by o.customer_id 
+order by percentage desc limit 5;
