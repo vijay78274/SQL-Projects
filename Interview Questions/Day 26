@@ -18,3 +18,7 @@ INSERT INTO orders VALUES
 ('6', 'Cold Drink'),
 ('7', 'Pizza'),
 ('8', 'Burger');
+
+Q1 Write an SQL query to fetch user IDs that have only bought both 'Burger' and 'Cold Drink' items.
+select user_id from orders 
+group by user_id having sum(case when item_ordered in ('Burger','Cold Drink') then 1 else 0 end)=2;
