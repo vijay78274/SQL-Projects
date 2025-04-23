@@ -52,3 +52,23 @@ INSERT INTO returns (return_id, seller_id, return_quantity) VALUES
 (6, 106, 6),
 (7, 107, 4),
 (8, 108, 9);
+
+Q1. write a SQL query to find the top 3 sellers with the highest sales amount but the lowest lowest return qty
+select *from orders;
+select *from returns;
+
+with ord
+as
+(
+	select seller_id, sum(sale_amount) as total_sales from orders 
+    group by seller_id
+),
+ret
+as 
+(
+	select seller_id, sum(return_quantity) as total_ret from returns
+    group by seller_id
+)
+
+select ord.seller_id as id, ord.total_sales as total_sale_amt, ret.total_ret as total_return from ord join ret on ord.seller_id=ret.seller_id
+order by total_sale_amt desc, total_return asc limit 3;
