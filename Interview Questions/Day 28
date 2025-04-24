@@ -18,3 +18,13 @@ VALUES
 (8, 300, 2012, 25, 7500),
 (9, 300, 2009, 30, 7200),
 (10, 300, 2013, 22, 6800);
+
+Q1. Write a solution to select the product id, year, quantity, 
+    and price for the first year of every product sold.
+
+select product_id, year, quantity, price
+from
+(
+	select product_id, year, quantity, price, row_number() over (partition by product_id order by year) as row_num from sales 
+) as sub
+where row_num=1;
