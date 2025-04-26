@@ -49,4 +49,12 @@ INSERT INTO Listens (listen_id, user_id, song_id, listen_date) VALUES
 (19, 119, 10, '2024-03-22'),
 (20, 120, 10, '2024-03-22');
 
+Q1. Write a SQL query to find the top 10 most popular songs by total number of listens. 
+You have two tables: Songs (containing song_id, song_name, 
+and artist_name) and Listens (containing listen_id, user_id, song_id, and listen_date).
 
+select s.song_name, count(l.listen_id) as total_listens 
+from songs s join listens l 
+on s.song_id=l.song_id 
+group by song_name 
+order by count(l.listen_id) desc limit 10;
