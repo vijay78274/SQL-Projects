@@ -1,2 +1,10 @@
+Dataset link : https://techtfq.com/blog/practice-writing-sql-queries-using-real-dataset#google_vignette=
+
 Q1. How many olympics games have been held?
 select count(distinct(games)) as total_games from athlete_events;
+
+Q2. List down all Olympics games held so far.
+select distinct(games) from athlete_events;
+
+Q3. Mention the total no of nations who participated in each olympics game?
+select games, count(noc) as total_nations from athlete_events group by games;
