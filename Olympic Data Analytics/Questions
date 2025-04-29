@@ -8,3 +8,15 @@ select distinct(games) from athlete_events;
 
 Q3. Mention the total no of nations who participated in each olympics game?
 select games, count(noc) as total_nations from athlete_events group by games;
+
+Q4. Which year saw the highest and lowest no of countries participating in olympics?
+with 
+high as 
+(
+	select year, count(noc)  as highest from athlete_events group by year order by count(noc) desc limit 1
+),
+low as 
+(
+	select year, count(noc) as lowest from athlete_events group by year order by count(noc) asc limit 1
+) 
+select high.year, high.highest from high union select low.year, low.lowest from low;
