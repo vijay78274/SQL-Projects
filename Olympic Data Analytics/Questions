@@ -20,3 +20,15 @@ low as
 	select year, count(noc) as lowest from athlete_events group by year order by count(noc) asc limit 1
 ) 
 select high.year, high.highest from high union select low.year, low.lowest from low;
+
+Q5. Which nation has participated in all of the olympic games?
+select noc, count(year) from athlete_events group by noc having count(distinct year) = (select count( distinct year) from athlete_events);
+
+Q6. Identify the sport which was played in all summer olympics.
+select sport, sum(case when season='summer' then 1 else 0 end) as total_summer from athlete_events 
+group by sport
+having 
+sum(case when season='summer' then 1 else 0 end) = (select sum(case when season='summer' then 1 else 0 end) from athlete_events);
+
+Q7. Which Sports were just played only once in the olympics?
+select sport, count(Games) as only_played_once from athlete_events group by sport having count(Games)=1; 
