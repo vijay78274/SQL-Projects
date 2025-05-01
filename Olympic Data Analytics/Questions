@@ -32,3 +32,9 @@ sum(case when season='summer' then 1 else 0 end) = (select sum(case when season=
 
 Q7. Which Sports were just played only once in the olympics?
 select sport, count(Games) as only_played_once from athlete_events group by sport having count(Games)=1; 
+
+Q8. Fetch the total no of sports played in each olympic games.
+select Games, count(sport) as total_sports from athlete_events group by Games; 
+
+Q9. Fetch details of the oldest athletes to win a gold medal.
+select name, sex, age, height, weight from athlete_events where age = (select max(age) from athlete_events) and medal='Gold';
