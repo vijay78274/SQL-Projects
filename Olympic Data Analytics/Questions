@@ -47,3 +47,18 @@ select name, sum(case when medal='Gold' then 1 else 0 end) as count_gold from at
 
 Q12. Fetch the top 5 athletes who have won the most medals (gold/silver/bronze)
 select name, sum(case when medal='NA' then 0 else 1 end) as count_medal from athlete_events group by name order by count_medal desc limit 5;
+
+Q13. Fetch the top 5 most successful countries in olympics. Success is defined by no of medals won.
+select n.region, count(a.medal) from athlete_events a 
+join noc_regions n on a.NOC=n.NOC 
+where a.medal!='NA'
+group by n.region 
+order by count(a.medal) desc limit 5;
+
+Q14. List down total gold, silver and broze medals won by each country.
+select n.region, sum(case when a.medal='Gold' then 1 else 0 end) as gold_medals, 
+sum(case when a.medal='Silver' then 1 else 0 end) as silver_medals,
+sum(case when a.medal='Bronze' then 1 else 0 end) as bronze_medals
+from athlete_events a 
+join noc_regions n on a.NOC=n.NOC 
+group by n.region;
