@@ -92,3 +92,10 @@ as
 select c.noc, c.gold_medals, c.silver_medals, c.bronze_medals
 from count_medals c having c.gold_medals=0 and c.silver_medals>0 and c.bronze_medals>0;
 
+Q18. In which Sport/event, India has won highest medals.
+select sport, sum(case when medal='NA' then 0 else 1 end) as medals
+from athlete_events where NOC='IND' group by sport
+order by medals desc limit 1;
+
+
+
