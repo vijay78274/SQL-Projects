@@ -62,3 +62,33 @@ sum(case when a.medal='Bronze' then 1 else 0 end) as bronze_medals
 from athlete_events a 
 join noc_regions n on a.NOC=n.NOC 
 group by n.region;
+
+Q15. List down total gold, silver and broze medals won by each country corresponding to each olympic games.
+select noc, games, sum(case when medal='Gold' then 1 else 0 end) as gold_medals, 
+sum(case when medal='Silver' then 1 else 0 end) as silver_medals, sum(case when medal='Bronze' then 1 else 0 end) as bronze_medals
+from athlete_events group by noc, games;
+
+Q16. Identify which country won the most gold, most silver and most bronze medals in each olympic games.
+with count_medals 
+as
+(
+	select noc, sum(case when medal='Gold' then 1 else 0 end) as gold_medals, 
+	sum(case when medal='Silver' then 1 else 0 end) as silver_medals,
+    sum(case when medal='Bronze' then 1 else 0 end) as bronze_medals from athlete_events
+    group by noc
+)
+select c.noc, c.gold_medals, c.silver_medals, c.bronze_medals
+from count_medals c order by c.gold_medals+c.silver_medals+c.bronze_medals desc;
+
+Q17. Which countries have never won gold medal but have won silver/bronze medals
+with count_medals 
+as
+(
+	select noc, sum(case when medal='Gold' then 1 else 0 end) as gold_medals, 
+	sum(case when medal='Silver' then 1 else 0 end) as silver_medals,
+    sum(case when medal='Bronze' then 1 else 0 end) as bronze_medals from athlete_events
+    group by noc
+)
+select c.noc, c.gold_medals, c.silver_medals, c.bronze_medals
+from count_medals c having c.gold_medals=0 and c.silver_medals>0 and c.bronze_medals>0;
+
