@@ -1,1 +1,8 @@
+Q1. List all Pokémon names with an HP greater than 70.
+select p.name, s.hp from pokemon p join stats s on p.id=s.id having hp > 70;
 
+Q2. Show the names and types of Pokémon that are of type fire.
+select p.name, t.value from pokemon p join type t on p.id = t.id having t.value='fire';
+
+Q3. Find Pokémon with speed less than 50 and more than 60. What do you observe?
+select p.name, s.speed from pokemon p join stats s on p.id=s.id having s.speed>50 and s.speed<60;
