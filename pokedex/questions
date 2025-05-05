@@ -29,3 +29,17 @@ order by total_stats desc limit 1;
 
 Q10. Show the name and BMI (body mass index = weight / (height^2)) of all Pokémon, ordered by BMI descending
 select name, round(weight/pow(height,2),2) as BMI from pokemon;
+
+Q11. List all Pokémon names along with their primary and secondary types
+WITH typed_ranked AS (
+    SELECT 
+        t.id,
+        t.value,
+        ROW_NUMBER() OVER (PARTITION BY t.id ORDER BY t.value) AS rn
+    FROM type t
+)
+SELECT p.name, max(case when rn=1 then t.value end) as primary_type,
+max(case when rn=2 then t.value end) as secondary_type
+from typed_ranked t left join pokemon p 
+on p.id=t.id
+group by p.name;
