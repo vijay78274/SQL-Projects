@@ -65,4 +65,3 @@ join stats s on e.id=s.id;
 
 Q14. List all Pokémon whose evolution set contains more than one Pokémon.
 select evo_set, count(evo_set) as no_of_evol from pokemon p group by evo_set;
-
