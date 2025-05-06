@@ -43,3 +43,26 @@ max(case when rn=2 then t.value end) as secondary_type
 from typed_ranked t left join pokemon p 
 on p.id=t.id
 group by p.name;
+
+Q12. Find all Pokémon with both 'fire' and 'flying' types using a self-join on pokemon_type.
+with pokemon_type as
+(
+	select t1.id from type t1 
+    join type t2 on t1.id=t2.id
+    where t1.value='fire' and t2.value='flying'
+)
+select p.name from pokemon p join pokemon_type t on t.id=p.id;
+
+Q13. Retrieve the name, evolution stage, and total stats (sum of all stat columns) of each Pokémon
+with evolution as 
+(
+	select p1.id, p1.name, row_number() over (partition by p1.evo_set) as evolution_stage 
+    from pokemon p1 left join pokemon p2 
+	on p1.evo_set=p2.id
+)
+select e.id, e.name, e.evolution_stage, s.hp+s.attack+s.defense+s.s_attack+s.s_defense+s.speed as total_stat from evolution e
+join stats s on e.id=s.id;
+
+Q14. List all Pokémon whose evolution set contains more than one Pokémon.
+select evo_set, count(evo_set) as no_of_evol from pokemon p group by evo_set;
+
