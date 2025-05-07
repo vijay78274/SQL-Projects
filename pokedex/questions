@@ -65,3 +65,23 @@ join stats s on e.id=s.id;
 
 Q14. List all Pokémon whose evolution set contains more than one Pokémon.
 select evo_set, count(evo_set) as no_of_evol from pokemon p group by evo_set;
+
+Q15. Display each Pokémon along with the names of other Pokémon in the same evolution set (excluding itself).
+with evolution as 
+(
+	select p1.id, p1.name, p1.evo_set, row_number() over (partition by p1.evo_set) as evolution_stage 
+    	from pokemon p1 left join pokemon p2 
+	on p1.evo_set=p2.id
+)
+select max(case when e.evolution_stage = 1 then e.name end) as stage1,
+max(case when e.evolution_stage = 2 then e.name end) as stage2,
+max(case when e.evolution_stage = 3 then e.name end) as stage3
+from evolution e group by e.evo_set;
+
+Q16. For each evolution set, rank Pokémon by total base stats using RANK().
+with total
+as
+(
+	select id, hp+attack+defense as total_stat from stats
+)
+select  p.evo_set, p.name, rank() over (partition by p.evo_set order by t.total_stat desc) as ranks from pokemon p join total t on t.id=p.id;
