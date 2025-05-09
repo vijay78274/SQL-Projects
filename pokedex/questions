@@ -104,3 +104,12 @@ as
 	select s.id, p.name, lag(s.attack) over (partition by p.evo_set) as diff from pokemon p join stats s on p.id=s.id
 )
 select p.name, s.attack-p.diff from stats s join previous_pokemon p on p.id=s.id;
+
+Q20. Use a CTE to calculate the total stats for each Pokémon, then select those whose total stats are in the top 10.
+with total_stats
+as
+(
+	select id, hp+attack+defense+s_attack+s_defense+speed as total from stats
+)
+select p.name, t.total from pokemon p join total_stats t on p.id=t.id order by t.total desc limit 10;
+
