@@ -85,3 +85,22 @@ as
 	select id, hp+attack+defense as total_stat from stats
 )
 select  p.evo_set, p.name, rank() over (partition by p.evo_set order by t.total_stat desc) as ranks from pokemon p join total t on t.id=p.id;
+
+Q17. Find Pokémon whose speed is above the average speed of their evolution set using AVG() OVER (PARTITION BY evo_set).
+with average as
+(
+	select p.id, p.name, p.evo_set, avg(t.speed) over (partition by p.evo_set) as avg_num 
+	from pokemon p left join stats t on t.id=p.id
+)
+select a.name, a.avg_num, s.speed from average a join stats s on a.id=s.id having s.speed>a.avg_num;
+
+Q18. Calculate the cumulative sum of HP values ordered by Pokémon ID using SUM() OVER (ORDER BY id).
+select p.name, sum(hp) over (order by s.id) as cumulative_sum from pokemon p join stats s on p.id=s.id;
+
+Q19. List Pokémon along with the difference in attack from the previous Pokémon in the same evolution set using LAG().
+with previous_pokemon 
+as
+(
+	select s.id, p.name, lag(s.attack) over (partition by p.evo_set) as diff from pokemon p join stats s on p.id=s.id
+)
+select p.name, s.attack-p.diff from stats s join previous_pokemon p on p.id=s.id;
