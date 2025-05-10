@@ -113,3 +113,13 @@ as
 )
 select p.name, t.total from pokemon p join total_stats t on p.id=t.id order by t.total desc limit 10;
 
+Q21. Filter Pokémon that are taller than the average height, and then join with their types.
+select p.name, t.value, p.height from pokemon p join type t on p.id=t.id having p.height > (select avg(height) from pokemon);
+
+Q22. With a CTE, find Pokémon whose weight is above the average weight of all Pokémon in their evolution group.
+with cte 
+as 
+(
+	select id, name, evo_set, avg(weight) over (partition by evo_set)  as avg_weight from pokemon
+)
+select p.name, p.weight, cte.avg_weight from pokemon p join cte on p.id=cte.id having p.weight > cte.avg_weight;
