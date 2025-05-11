@@ -6,3 +6,6 @@ select country, year, water_consume from water_consumption where country = 'Indi
 
 Q3. Total water consumption by sector in 2020
 select country, agriculture_water+household_water+industrial_water from water_consumption where year = 2020;
+
+Q4. Top 5 countries by total water consumption in 2015
+select * from water_consumption where year = 2015 order by water_consume desc limit 5;
