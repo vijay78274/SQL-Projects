@@ -1,0 +1,8 @@
+Q1. List all distinct countries in the dataset
+select distinct country from water_consumption;
+
+Q2. Show water consumption for India in 2020
+select country, year, water_consume from water_consumption where country = 'India' and year = 2020;
+
+Q3. Total water consumption by sector in 2020
+select country, agriculture_water+household_water+industrial_water from water_consumption where year = 2020;
