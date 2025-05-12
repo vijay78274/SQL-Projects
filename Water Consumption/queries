@@ -9,3 +9,12 @@ select country, agriculture_water+household_water+industrial_water from water_co
 
 Q4. Top 5 countries by total water consumption in 2015
 select * from water_consumption where year = 2015 order by water_consume desc limit 5;
+
+Q5. Find entries where consumption is above the average for year;
+with cte 
+as
+(
+	select country, year, water_consume, avg(water_consume) over (partition by year) avg_water from water_consumption
+)
+select country, year, water_consume, avg_water from cte where water_consume > avg_water;
+
