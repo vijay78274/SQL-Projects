@@ -18,3 +18,13 @@ as
 )
 select country, year, water_consume, avg_water from cte where water_consume > avg_water;
 
+Q6. Find countries with the highest and lowest agricultural water use %.
+select country, agriculture_water from water_consumption where agriculture_water = (select min(agriculture_water) from water_consumption)
+union
+select country, agriculture_water from water_consumption where agriculture_water = (select max(agriculture_water) from water_consumption);
+
+Q7. Rank countries by total water consumption each year.
+select country, year, dense_rank() over (partition by year order by water_consume) as ranks from water_consumption;
+
+Q8. Calculate running average of rainfall over the years for each country.
+select distinct country, avg(water_consume) over (partition by country) as average from water_consumption;
