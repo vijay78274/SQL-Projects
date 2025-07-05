@@ -1,1 +1,14 @@
-
+Q1. List all reports filed in the city of Mumbai.
+select *From crime_india where city = 'Mumbai';
+Q2. Show the distinct crime codes recorded.
+select distinct(crime_code) from crime_india;
+Q3. Retrieve every incident where the weapon used was “Knife” and the case is still open (Case_Closed = 'N').
+select *from crime_india where weapon_used='Knife' and case_closed='No';
+Q4. For each city, count the total number of reports.
+select city, count(*) as crime_count from crime_india group by city;
+Q5. Find the average victim age for each crime code, showing only codes with at least 2 incidents.
+select crime_code, avg(victim_age) from crime_india group by crime_code having count(*) >= 2;
+Q6. Compute the proportion of closed cases (Case_Closed = 'Y') for each city, rounded to two decimals.
+select sum(case when case_closed='Yes' then 1 else 0 end)/count(*) as proportion from crime_india;  
+Q7. List the top 5 days of the week (Monday–Sunday) with the highest number of crimes.
+select dayname(date_occurance), count(*) from crime_india group by dayname(date_occurance) order by count(*) limit 5;
