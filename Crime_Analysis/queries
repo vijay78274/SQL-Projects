@@ -12,3 +12,29 @@ Q6. Compute the proportion of closed cases (Case_Closed = 'Y') for each city, ro
 select sum(case when case_closed='Yes' then 1 else 0 end)/count(*) as proportion from crime_india;  
 Q7. List the top 5 days of the week (Monday–Sunday) with the highest number of crimes.
 select dayname(date_occurance), count(*) from crime_india group by dayname(date_occurance) order by count(*) limit 5;
+Q8. Show cities where > 30 % of crimes involved a firearm.
+select city, sum(case when weapon_used = 'Firearm' then 1 else 0 end)*100/count(*) as per 
+from crime_india 
+group by city 
+having per>30;
+Q9. For each crime domain, return the youngest and oldest victim age; exclude domains with fewer than 2 entries.
+select crime_domain, min(victim_age), max(victim_age) 
+from crime_india 
+group by crime_domain 
+having count(*)>2;
+Q10. Identify all reports whose victim age is above the overall average victim age.
+select *from crime_india 
+where victim_age>
+(
+	select avg(victim_age) from crime_india
+);
+Q11. Using a CTE, calculate each city’s monthly crime trend in 2025, then list cities where December had the highest count of the year.
+with cte as 
+(
+	select city, month(date_occurance) as months, count(*) as counts from crime_india group by city, month(date_occurance)
+),
+cte2 as 
+(
+	select city, months, counts, max(counts) over (partition by city) as max_count from cte
+)
+select city, months, counts from cte2 where months=10 and counts=max_count;
