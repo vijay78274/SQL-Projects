@@ -1,0 +1,2 @@
+List all forts (type = 'Fort') in the North zone.
+  select *from places where type='fort' and zone='Northern';
