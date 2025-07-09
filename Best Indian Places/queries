@@ -1,2 +1,4 @@
-List all forts (type = 'Fort') in the North zone.
-  select *from places where type='fort' and zone='Northern';
+Q1. List all forts (type = 'Fort') in the North zone.
+select *from places where type='fort' and zone='Northern';
+Q2. Show every spot in Karnataka with a rating ≥ 4.5.
+select *From places where rating >= 4.5; 
