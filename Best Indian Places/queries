@@ -15,3 +15,20 @@ select *from places where city='Jaipur' order by estb_year desc;
 
 Q6. Count how many attractions each state has; display states with ≥ 10 spots.
 select state, count(id) as num from places group by state having count(id)>=10;
+
+Q7. Compute the average entry fee per type
+select type, avg(entr_fee) from places group by type;
+
+Q8. Find the minimum, maximum, and average rating for every zone.
+select zone, min(rating), max(rating), avg(rating) from places group by zone;
+
+Q9. Create a list that labels each spot as ‘Budget’ (entr_fee < 100), ‘Mid-range’ (₹100-₹500), or ‘Premium’ (> ₹500).
+select entr_fee, 
+(case when entr_fee<100 then 'Budget'
+when entr_fee>=100 and entr_fee<=500 then 'Mid-range' 
+else 'Premium' end) as Category
+from places;
+
+Q10. For each state, compute the percentage of attractions that allow DSLRs.
+select state, sum(case when dslr_allowed='Yes' then 1 else 0 end)*100/count(*) as percent 
+from places group by state;
