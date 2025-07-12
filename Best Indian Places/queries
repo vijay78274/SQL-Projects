@@ -32,3 +32,14 @@ from places;
 Q10. For each state, compute the percentage of attractions that allow DSLRs.
 select state, sum(case when dslr_allowed='Yes' then 1 else 0 end)*100/count(*) as percent 
 from places group by state;
+
+Q11. List sites that have been established for more than 100 years.
+select *, year(current_date())-estb_year as diff from places where year(current_date())-estb_year<=100;
+
+Q12. How the five most recently established museums.
+select * from places order by estbl_year desc limit 5;
+
+Q13. Identify attractions whose entr_fee is below the state’s average entry fee.
+select *
+from places ts
+where entr_fee < (select avg(entr_fee) from places where state=ts.state);
