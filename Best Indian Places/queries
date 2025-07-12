@@ -43,3 +43,8 @@ Q13. Identify attractions whose entr_fee is below the state’s average entry fe
 select *
 from places ts
 where entr_fee < (select avg(entr_fee) from places where state=ts.state);
+
+Q14. List the states whose highest rated attraction has a rating below 4.7
+select state, max(rating) as max 
+from places
+group by state having max<4.7; 
