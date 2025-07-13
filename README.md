@@ -4,7 +4,6 @@ Contains various sql project for for practicing. Covers every topic from basic D
 Contains datasets, question and their corresponding queries.
 
 
-
 ## Technology used
 - SQL
 - MySQL Workbench
