@@ -48,3 +48,17 @@ Q14. List the states whose highest rated attraction has a rating below 4.7
 select state, max(rating) as max 
 from places
 group by state having max<4.7; 
+
+Q15. Using a CTE, compute each state’s median entry fee; list the three states with the highest medians.
+with cte as
+(
+	select state, avg(entr_fee) as median from places group by state
+)
+select *from cte order by median desc limit 3;
+
+Q16. Group rank with states.
+with cte as
+(
+	select state, estb_year, rank() over (partition by state order by estb_year) from places
+)
+select *from cte;
