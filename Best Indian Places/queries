@@ -71,3 +71,8 @@ from places;
 Q18. Calculate a running total of attractions established over the years for the entire table.
 select estb_year, count(*) over (partition by estb_year) from places;  
 
+Q19. find all attractions whose signification field mentions ‘life’.
+select *from places where signification like '%life%';
+
+Q20. Return names that ends with “Fort” and allow DSLRs.
+select name from places where name like '%Fort' and dslr_allowed='Yes';
