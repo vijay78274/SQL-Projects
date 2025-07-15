@@ -62,3 +62,12 @@ with cte as
 	select state, estb_year, rank() over (partition by state order by estb_year) from places
 )
 select *from cte;
+
+Q17. For every state, rank attractions by review_in_lakh (most‑reviewed = rank 1)
+select state, review_in_lakh, 
+rank() over (partition by state order by review_in_lakh desc)
+from places;
+
+Q18. Calculate a running total of attractions established over the years for the entire table.
+select estb_year, count(*) over (partition by estb_year) from places;  
+
