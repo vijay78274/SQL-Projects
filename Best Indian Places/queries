@@ -76,3 +76,7 @@ select *from places where signification like '%life%';
 
 Q20. Return names that ends with “Fort” and allow DSLRs.
 select name from places where name like '%Fort' and dslr_allowed='Yes';
+
+Q21. Determine the zone with the lowest average entry fee but an average rating above 4.0.
+select zone, avg(entr_fee), avg(rating) from places group by zone having avg(rating)>4 order by avg(entr_fee);
+
