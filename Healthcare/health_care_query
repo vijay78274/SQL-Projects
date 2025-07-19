@@ -1,0 +1,2 @@
+Q1. List all patients admitted in January 2024.
+    select *From healthcare where month(date_of_admission)=1 and year(date_of_admission)=2024;
