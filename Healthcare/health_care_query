@@ -1,2 +1,8 @@
 Q1. List all patients admitted in January 2024.
     select *From healthcare where month(date_of_admission)=1 and year(date_of_admission)=2024;
+
+Q2. Find all male patients diagnosed with 'Cancer'.
+    select *From healthcare where gender='Male' and medical_condition='Cancer';
+
+Q3. Show patients with a billing amount greater than ₹10,000.
+    select *from healthcare where billing_amount > 10000;
