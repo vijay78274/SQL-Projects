@@ -17,3 +17,7 @@ Q6. Display the top 5 highest billing patients.
     select *from healthcare 
     order by billing_amount 
     desc limit 5;
+
+Q7. List all patients ordered by admission date descending.
+    select *from healthcare
+    order by date_of_admission desc;
