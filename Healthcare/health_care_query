@@ -6,3 +6,14 @@ Q2. Find all male patients diagnosed with 'Cancer'.
 
 Q3. Show patients with a billing amount greater than ₹10,000.
     select *from healthcare where billing_amount > 10000;
+
+Q4. Get details of patients discharged on or after 01-02-2024.
+    select *from healthcare where discharge_date>='2024-02-01';
+
+Q5. Retrieve all patients with blood type 'O+' or 'A-'
+    select *from healthcare where blood_type = 'O+' or blood_type='A-';
+
+Q6. Display the top 5 highest billing patients.
+    select *from healthcare 
+    order by billing_amount 
+    desc limit 5;
