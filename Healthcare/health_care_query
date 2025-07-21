@@ -28,3 +28,9 @@ Q8. Find the youngest female patient.
 
 Q9. What is the average billing amount per medical condition
     select medical_condition, avg(billing_amount) from healthcare group by medical_condition;
+
+Q10. Show number of patients by blood type.
+     select blood_type, count(*) as no_of_patients from healthcare group by blood_type
+
+Q11. Count urgent admissions per doctor.
+    select doctor, sum(case when admission_type='Urgent' then 1 else 0 end) as urgent from healthcare group by doctor;
