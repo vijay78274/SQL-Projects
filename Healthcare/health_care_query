@@ -1,3 +1,4 @@
+
 Q1. List all patients admitted in January 2024.
     select *From healthcare where month(date_of_admission)=1 and year(date_of_admission)=2024;
 
@@ -21,3 +22,9 @@ Q6. Display the top 5 highest billing patients.
 Q7. List all patients ordered by admission date descending.
     select *from healthcare
     order by date_of_admission desc;
+
+Q8. Find the youngest female patient.
+    select *from healthcare where gender='Female' order by age limit 1;
+
+Q9. What is the average billing amount per medical condition
+    select medical_condition, avg(billing_amount) from healthcare group by medical_condition;
