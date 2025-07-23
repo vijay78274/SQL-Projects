@@ -36,12 +36,34 @@ Q11. Count urgent admissions per doctor.
     select doctor, sum(case when admission_type='Urgent' then 1 else 0 end) as urgent from healthcare group by doctor;
 
 Q12. Calculate the number of days each patient stayed in the hospital.
-select name, datediff(discharge_date,date_of_admission) as days_in_hospital from healthcare;
+    select name, datediff(discharge_date,date_of_admission) as days_in_hospital from healthcare;
 
 Q13. List patients who were admitted and discharged in the same month.
-select name, date_of_admission, discharge_date From healthcare where month(date_of_admission) = month(discharge_date);
+    select name, date_of_admission, discharge_date From healthcare where month(date_of_admission) = month(discharge_date);
 
 Q14. Show the month-wise total billing for the year 2024.
-select month(discharge_date) as month_of_2024,sum(billing_amount) as total_billing 
-from healthcare 
-where year(discharge_date)=2024 group by month(discharge_date);
+    select month(discharge_date) as month_of_2024,sum(billing_amount) as total_billing 
+    from healthcare 
+    where year(discharge_date)=2024 group by month(discharge_date);
+
+Q15. List doctors who treated more than 5 patients.
+    select doctor, count(*) from healthcare group by doctor having count(*)>5;
+
+Q16. Find the insurance provider covering the highest total billing.
+    select insurance_provider, sum(billing_amount) as total_billing 
+    from healthcare
+    group by insurance_provider 
+    order by total_billing desc limit 1;
+
+Q17. Show patients whose billing is below their hospital's average billing.
+    with cte as
+    (
+	    select hospital, avg(billing_amount) as avg_amount from healthcare
+        group by hospital
+    )
+    select h.name, h.hospital, h.billing_amount, cte.avg_amount 
+    from healthcare h 
+    join cte on cte.hospital = h.hospital 
+    where h.billing_amount < cte.avg_amount; 
+
+Q18. 
