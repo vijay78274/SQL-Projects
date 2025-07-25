@@ -1,4 +1,3 @@
-
 Q1. List all patients admitted in January 2024.
     select *From healthcare where month(date_of_admission)=1 and year(date_of_admission)=2024;
 
@@ -66,4 +65,12 @@ Q17. Show patients whose billing is below their hospital's average billing.
     join cte on cte.hospital = h.hospital 
     where h.billing_amount < cte.avg_amount; 
 
-Q18. 
+Q18. Rank patients within each hospital by billing amount.
+     select name, hospital, billing_amount, 
+     rank() over (partition by hospital order by billing_amount desc) as ranks 
+     from healthcare;
+
+Q19. Show the running total of billing amounts ordered by date of admission.
+     select name, hospital, billing_amount, date_of_admission, 
+     sum(billing_amount) over (order by date_of_admission) as ranks 
+     from healthcare;
