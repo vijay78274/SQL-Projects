@@ -74,3 +74,8 @@ Q19. Show the running total of billing amounts ordered by date of admission.
      select name, hospital, billing_amount, date_of_admission, 
      sum(billing_amount) over (order by date_of_admission) as ranks 
      from healthcare;
+
+Q20. Assign a dense rank to each patient by age within gender.
+     select name, gender, age, 
+     dense_rank() over (partition by gender order by age) as rank_age_gender 
+     from healthcare; 
