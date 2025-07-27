@@ -79,3 +79,19 @@ Q20. Assign a dense rank to each patient by age within gender.
      select name, gender, age, 
      dense_rank() over (partition by gender order by age) as rank_age_gender 
      from healthcare; 
+
+Q21. Create a new column classifying patients as:
+    'High Bill' if billing > 15000,
+    'Medium Bill' if billing between 5000 and 15000,
+    'Low Bill' otherwise.
+
+    select name, billing_amount, 
+    case when billing_amount >15000 then 'High Bill'
+    when billing_amount>5000 and billing_amount<15000 then 'Medium Bill'
+    else 'Low Bill' end as billing_category from healthcare;
+
+Q22. Flag patients as Long Stay if they stayed more than 5 days.
+     select name, date_of_admission, discharge_date,
+     case when datediff(discharge_date,date_of_admission) > 5
+     then 'Long Stay' end as stay 
+     from healthcare;
