@@ -95,3 +95,10 @@ Q22. Flag patients as Long Stay if they stayed more than 5 days.
      case when datediff(discharge_date,date_of_admission) > 5
      then 'Long Stay' end as stay 
      from healthcare;
+
+Q23. Find all patients whose medication includes 'Paracetamol'.
+     select *from healthcare where medication = 'Paracetamol';
+
+Q24. List patients whose name starts with 'B'.
+     select name, age, gender, medical_condition, hospital from healthcare 
+     where name like 'B%';
