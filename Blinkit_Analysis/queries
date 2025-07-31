@@ -2,6 +2,15 @@ Q1. List all customers who registered in 2024.
     select *From blinkit_customers where year(registration_date)=2024;
 
 Q2. Display all products with a margin percentage greater than 20%.
-select *From blinkit_products where margin_percentage>20;
+    select *From blinkit_products where margin_percentage>20;
+
+Q3. Find the total number of feedback entries received in last year.
+    select *from blinkit_customer_feedback where year(current_date())-year(feedback_date) = 1;
+
+Q4. Get all orders where delivery status is 'Delayed'.
+    select *From blinkit_orders where delivery_status like '%Delayed%';
+
+Q5. Show all campaigns that used the ‘Email’ channel.
+    select *from blinkit_marketing_performance where channel='Email';
 
 
