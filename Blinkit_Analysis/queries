@@ -13,4 +13,15 @@ Q4. Get all orders where delivery status is 'Delayed'.
 Q5. Show all campaigns that used the ‘Email’ channel.
     select *from blinkit_marketing_performance where channel='Email';
 
+Q6. Show the average rating for each feedback_category.
+    Show the average rating for each feedback_category.
+    select feedback_category, avg(rating) 
+    from
+    blinkit_customer_feedback     
+    group by feedback_category;
 
+Q7. List all orders with their customer name and total order value.
+    select c.customer_name, sum(o.order_total) as total_order_value 
+    from blinkit_orders o
+    join blinkit_customers c on o.customer_id = c.customer_id
+    group by c.customer_name;
