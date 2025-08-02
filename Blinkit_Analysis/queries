@@ -33,3 +33,17 @@ Q8. For each product, show the total quantity sold.
     on p.product_id = o.product_id 
     group by
     p.product_name;
+
+Q9. Display all customers who gave negative sentiment feedback.
+    select c.customer_name, f.sentiment 
+    from
+    blinkit_customers c join blinkit_customer_feedback f 
+    on c.customer_id=f.customer_id where f.sentiment='Negative';
+
+Q10. Show top 5 brands with the most products in the catalog.
+    select *From blinkit_products;
+    select brand, sum(max_stock_level) as catalog
+    from blinkit_products
+    group by brand 
+    order by catalog desc
+    limit 5;
