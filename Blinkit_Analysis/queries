@@ -47,3 +47,17 @@ Q10. Show top 5 brands with the most products in the catalog.
     group by brand 
     order by catalog desc
     limit 5;
+
+Q11. Calculate the ROAS (Return on Ad Spend) per campaign.
+    select *From blinkit_marketing_performance;
+    select campaign_name,sum(roas) as roas_per_camp
+    from 
+    blinkit_marketing_performance 
+    group by campaign_name;
+
+Q12. Find the top 3 customer segments by total_orders.
+    select customer_segment, sum(total_orders) as total
+    from 
+    blinkit_customers
+    group by 
+    customer_segment;
