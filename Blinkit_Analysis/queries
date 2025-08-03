@@ -61,3 +61,15 @@ Q12. Find the top 3 customer segments by total_orders.
     blinkit_customers
     group by 
     customer_segment;
+
+Q13. For each store, compute the total number of delayed deliveries.
+     select *From blinkit_orders;
+     select store_id, sum(case when delivery_status like '%Delayed' then 1 else 0 end) as status 
+     from
+     blinkit_orders group by store_id;
+
+Q14. List customers whose average order value is above ₹500 and have more than 10 total orders.
+     select customer_name, total_orders, avg_order_value 
+     from blinkit_customers
+     having avg_order_value>500 and total_orders>10;
+
