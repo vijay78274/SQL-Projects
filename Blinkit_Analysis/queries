@@ -73,3 +73,10 @@ Q14. List customers whose average order value is above ₹500 and have more than
      from blinkit_customers
      having avg_order_value>500 and total_orders>10;
 
+Q15. Identify feedback that contains the word “bad” in feedback_text.
+     select *From blinkit_customer_feedback
+     where feedback_text like '%bad%';
+
+Q16. Find the top 5 customers by total revenue generated from their orders.
+     select customer_id, total_orders*avg_order_value as total_revenue 
+     from blinkit_customers;
