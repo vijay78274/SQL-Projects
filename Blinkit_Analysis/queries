@@ -86,3 +86,19 @@ Q17. Compare promised vs. actual delivery time and list the orders delayed by mo
      datediff(actual_delivery_time,promised_delivery_time) as time_diff
      from blinkit_orders 
      where time_diff > 2;
+
+Q18. Show monthly revenue generated from campaigns in 2024.
+     SELECT 
+        MONTH(date), SUM(revenue_generated)
+     FROM
+        blinkit_marketing_performance
+     WHERE
+        YEAR(date) = '2024'
+     GROUP BY MONTH(date);
+
+Q19. Find the number of orders placed each day of the week.
+     SELECT 
+        WEEKDAY(order_date), COUNT(*)
+     FROM
+        blinkit_orders
+    GROUP BY WEEKDAY(order_date);
