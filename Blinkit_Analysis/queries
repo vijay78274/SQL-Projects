@@ -102,3 +102,9 @@ Q19. Find the number of orders placed each day of the week.
      FROM
         blinkit_orders
     GROUP BY WEEKDAY(order_date);
+
+Q20. Display the most recent feedback from each customer.
+     with cte as(
+	    select customer_id, feedback_date, rank() over (partition by customer_id order by feedback_date desc) as rnk from blinkit_customer_feedback
+     )
+     select *from cte where rnk=1;
